@@ -1,13 +1,25 @@
 import React from 'react'
 import '../../styles.css'
-import { Box } from '@mui/material'
+import { Box, Card, CardMedia, Paper } from '@mui/material'
+import playa from '../../assets/videos/beach.mp4'
+
 
 const HeroSection = () => {
   return (
-    <Box>
-      
-      <video src='../../assets/videos/video8.MP4' autoPlay loop muted />
-    </Box>
+    
+            <Card 
+            >
+                <CardMedia
+                    component='video'
+                    alt='video'
+                    src={playa}
+                    title='video'
+                    type='video/mp4'
+                    muted=''
+                    autoPlay=''
+                    minHeight="100vh"
+                />
+            </Card>
   )
 }
 

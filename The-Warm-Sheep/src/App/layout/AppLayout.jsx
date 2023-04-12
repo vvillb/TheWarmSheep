@@ -1,6 +1,6 @@
 import React from 'react'
 import NavBar from '../components/NavBar'
-import { Box } from '@mui/material'
+import { Box, Toolbar } from '@mui/material'
 
 const AppLayout = ({ children }) => {
   return (
@@ -9,8 +9,10 @@ const AppLayout = ({ children }) => {
 
         <Box
             component='main'
-            sx={{ flexGrow: 1, p: 3 }}
+            sx={{ flexGrow: 1 }}
+            
         >
+          <Toolbar/>
         {children}
         </Box>
     </Box>

@@ -5,9 +5,9 @@ import HideOnScroll from './functions/HideOnScroll';
 import { Link } from 'react-router-dom';
 
 const navItems = [
-  { title: 'Home', path: '/' },
-  { title: 'About', path: '/about' },
-  { title: 'Contact', path: '/contact' },
+  { id:1, title: 'Home', path: '/' },
+  { id:2, title: 'About', path: '/about' },
+  { id:3, title: 'Contact', path: '/contact' },
 ];
 
 const NavBar = () => {
@@ -21,10 +21,12 @@ const NavBar = () => {
     <Box sx={{ width: 250 }}>
       <List>
         {navItems.map((item) => (
-          <ListItem key={item} disablePadding>
-            <ListItemButton onClick={handleDrawerToggle}>
-              <ListItemText primary={item} />
+          <ListItem key={item.id} disablePadding>
+            <Link to={item.path} onClick={handleDrawerToggle}>
+            <ListItemButton >
+              <ListItemText primary={item.title} />
             </ListItemButton>
+            </Link>
           </ListItem>
         ))}
       </List>
@@ -51,8 +53,8 @@ const NavBar = () => {
             </Typography>
             <Box sx={{ display: { xs: 'none', md: 'block' } }}>
               {navItems.map((item) => (
-                <Link key={item.title} to={item.path} >
-                <Button key={item} color="secondary" >
+                <Link key={item.id} to={item.path} >
+                <Button key={item.id} color="secondary" >
                   {item.title}
                 </Button>
                 </Link>
