@@ -1,12 +1,14 @@
 import React from 'react'
 import AppLayout from '../layout/AppLayout'
 import { Grid, Typography } from '@mui/material'
+import HeroSection from './HeroSection'
 
 
 const HomePage = () => {
   return (
     <React.Fragment >
     <AppLayout>
+      <HeroSection/>
       <Typography variant='h1'>
             The Warm Sheep
         </Typography>
@@ -17,8 +19,9 @@ const HomePage = () => {
           direction="column"
           alignItems="center"
           justifyContent="center"
-          sx={{minHeight:'50vh',backgroundColor:'secondary.main',margin:0,padding:4}}>
+          sx={{minHeight:'50vh',backgroundColor:'secondary.main',margin:0,padding:10}}>
       </Grid>  
+     
     </AppLayout>
     </React.Fragment>
   )
