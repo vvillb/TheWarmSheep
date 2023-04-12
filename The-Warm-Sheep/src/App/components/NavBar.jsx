@@ -2,8 +2,13 @@ import * as React from 'react';
 import { AppBar, Box, Button, Drawer, IconButton, List, ListItem, ListItemButton, ListItemText, Toolbar, Typography } from "@mui/material";
 import { MenuOutlined } from '@mui/icons-material';
 import HideOnScroll from './functions/HideOnScroll';
+import { Link } from 'react-router-dom';
 
-const navItems = ['Home', 'About', 'Contact'];
+const navItems = [
+  { title: 'Home', path: '/' },
+  { title: 'About', path: '/about' },
+  { title: 'Contact', path: '/contact' },
+];
 
 const NavBar = () => {
   const [drawerOpen, setDrawerOpen] = React.useState(false);
@@ -42,13 +47,15 @@ const NavBar = () => {
               <MenuOutlined />
             </IconButton>
             <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-              The Warm Seep
+              The Warm Sheep
             </Typography>
             <Box sx={{ display: { xs: 'none', md: 'block' } }}>
               {navItems.map((item) => (
-                <Button key={item} color="inherit">
-                  {item}
+                <Link key={item.title} to={item.path} >
+                <Button key={item} color="inherit" >
+                  {item.title}
                 </Button>
+                </Link>
               ))}
             </Box>
           </Toolbar>
