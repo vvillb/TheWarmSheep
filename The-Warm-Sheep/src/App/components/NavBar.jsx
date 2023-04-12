@@ -1,19 +1,9 @@
 import * as React from 'react';
-import { AppBar, Box, Button, Drawer, IconButton, List, ListItem, ListItemButton, ListItemText, Slide, Toolbar, Typography, useScrollTrigger } from "@mui/material";
+import { AppBar, Box, Button, Drawer, IconButton, List, ListItem, ListItemButton, ListItemText, Toolbar, Typography } from "@mui/material";
 import { MenuOutlined } from '@mui/icons-material';
+import HideOnScroll from './functions/HideOnScroll';
 
 const navItems = ['Home', 'About', 'Contact'];
-
-function HideOnScroll(props) {
-  const { children } = props;
-  const trigger = useScrollTrigger();
-
-  return (
-    <Slide appear={false} direction="down" in={!trigger}>
-      {children}
-    </Slide>
-  );
-}
 
 const NavBar = () => {
   const [drawerOpen, setDrawerOpen] = React.useState(false);
@@ -37,8 +27,8 @@ const NavBar = () => {
   );
 
   return (
-    <HideOnScroll>
-      <Box sx={{ flexGrow: 1 }}>
+    <Box sx={{ flexGrow: 1 }}>
+      <HideOnScroll>
         <AppBar position="fixed">
           <Toolbar>
             <IconButton
@@ -52,7 +42,7 @@ const NavBar = () => {
               <MenuOutlined />
             </IconButton>
             <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-              News
+              The Warm Seep
             </Typography>
             <Box sx={{ display: { xs: 'none', md: 'block' } }}>
               {navItems.map((item) => (
@@ -63,6 +53,7 @@ const NavBar = () => {
             </Box>
           </Toolbar>
         </AppBar>
+        </HideOnScroll>
         <Drawer
           anchor="left"
           open={drawerOpen}
@@ -72,7 +63,6 @@ const NavBar = () => {
           {drawer}
         </Drawer>
       </Box>
-    </HideOnScroll>
   );
 };
 
