@@ -35,7 +35,7 @@ const NavBar = () => {
     <Box sx={{ flexGrow: 1 }}>
       <HideOnScroll>
         <AppBar position="fixed">
-          <Toolbar>
+          <Toolbar sx={{textAlign:'left'}}>
             <IconButton
               size="large"
               edge="start"
@@ -46,13 +46,13 @@ const NavBar = () => {
             >
               <MenuOutlined />
             </IconButton>
-            <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+            <Typography variant="h6" component="div" color="secondary" sx={{ flexGrow: 1 }}>
               The Warm Sheep
             </Typography>
             <Box sx={{ display: { xs: 'none', md: 'block' } }}>
               {navItems.map((item) => (
                 <Link key={item.title} to={item.path} >
-                <Button key={item} color="inherit" >
+                <Button key={item} color="secondary" >
                   {item.title}
                 </Button>
                 </Link>
