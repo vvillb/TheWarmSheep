@@ -6,6 +6,10 @@ import playa from '../../assets/images/playa1.jpg'
 
 const HeroSection = () => {
   return (
+    <Box
+    sx={{
+        flexGrow:1
+    }}>
   <Grid container>
       <Grid item
             sx={{
@@ -22,6 +26,7 @@ const HeroSection = () => {
                 top: '0',
                 width: '1102px',
                 objectFit:'cover',
+                maxWidth:'100vw',
                 // transform: 'translate(-50%, -50%)',
                 //  maxWidth: '100%',
                 // height: 'auto',
@@ -40,32 +45,31 @@ const HeroSection = () => {
           <Typography variant='h1' 
           sx={{
               textShadow:'0px 0px 20px rgba(0,0,0,0.4)',
-              fontSize:'clamp(5rem,8vw,20rem)',
+              fontSize:'(5rem,8vw,20rem)',
               textAlign: 'left',
               position: 'absolute',
-              left: '80px',
-              top: '231px',
               width: '470px',
               height: '80px',
               flexDirection: 'column',
-              flexWrap:'wrap' }}>
+              flexWrap:'wrap' ,
+              transform:'translate(30%,150%)'}}>
               The Warm Sheep
           </Typography>
           <Typography variant='h3'
           sx={{
+            fontSize:'clamp(3rem,6vw,15rem)',
               position: 'absolute',
-              left: '1022px',
-              top: '610px',
               width: '470px',
               height: '80px',
               flexDirection: 'column' ,
               flexWrap:'wrap' ,
+              transform:'translate(100%,500%)'
 
           }}>
               Handmade Knits
           </Typography>
       </Grid>
-</Grid>
+</Grid></Box>
   )
 }
 
