@@ -48,17 +48,23 @@ const NavBar = () => {
             >
               <MenuOutlined />
             </IconButton>
+            <Box>
+            <Link to='/'  sx={{ flexGrow: 1 }}>
             <Typography variant="h6" component="div" color="secondary" sx={{ flexGrow: 1 }}>
               The Warm Sheep
             </Typography>
-            <Box sx={{ display: { xs: 'none', md: 'block' } }}>
+            </Link>
+            </Box>
+            <Box sx={{ display: { xs: 'none', md: 'flex' },justifyContent:'flex-end'}}>
+            <Box sx={{ display:'flex', justifyContent:'flex-end', flexGrow:1}}>
               {navItems.map((item) => (
                 <Link key={item.id} to={item.path} >
-                <Button key={item.id} color="secondary" >
+                <Button key={item.id} color="secondary"  >
                   {item.title}
                 </Button>
                 </Link>
               ))}
+            </Box>
             </Box>
           </Toolbar>
         </AppBar>

@@ -5,15 +5,14 @@ import playa from '../../assets/images/playa.jpg'
 
 import { Image } from '@mui/icons-material'
 import HeroSection from './HeroSection'
-import Parallax2 from '../components/parallax/Parallax2'
-import ParallaxHero from './ParallaxHero'
-import ParallaxHero2 from './ParallaxHero2'
+import ParallaxSections from './ParallaxSections.jsx'
 
 
 const HomePage = () => {
   return (
     <AppLayout>
-    <ParallaxHero2/>
+      {/* <ParallaxSections/> */}
+    <HeroSection/>
     </AppLayout>
 //     <React.Fragment >
 //     <AppLayout>
