@@ -10,7 +10,7 @@ const HeroSection = () => {
     <Grid
       sx={{
         height: '100vh',
-        background: `url(${playa})`,
+        background: `linear-gradient( rgba(8, 8, 37, 0.85), rgba(0, 15, 80, 0.675)), url(${playa})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         display: 'flex',
@@ -32,6 +32,7 @@ const HeroSection = () => {
               textAlign: 'left',
               flexDirection: 'column',
               flexWrap:'wrap' ,
+              color:'white'
               }}>
               The Warm Sheep
           </Typography>

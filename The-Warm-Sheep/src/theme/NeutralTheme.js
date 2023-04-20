@@ -22,7 +22,8 @@ export const NeutralTheme=createTheme({
     },
     typography:{
         h1:{
-            fontFamily: 'Cormorant Garamond'
+            fontFamily: 'Cormorant Garamond',
+            color:'white'
         },
         h2:{
             fontFamily: 'Cormorant Garamond'
