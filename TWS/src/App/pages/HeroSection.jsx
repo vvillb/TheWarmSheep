@@ -31,17 +31,17 @@ const HeroSection = () => {
       sx={{
         justifyContent:'left',
         display:'flex',
-        
+        padding:'5%'
       }}>
       <Typography variant='h1' 
           className='title'
+          
           sx={{
               textShadow:'0px 0px 20px rgba(0,0,0,0.4)',
               // fontSize:'(5rem,8vw,20rem)',
               textAlign: 'left',
               flexDirection: 'column',
               flexWrap:'wrap' ,
-              
               }}>
               The Warm Sheep
           </Typography>
@@ -98,15 +98,22 @@ const HeroSection = () => {
       <Link to='/about'>
       <Button
         variant="contained"
-        color="primary"
+       
+        className='heroButton'
         sx={{
-          textTransform: 'uppercase',
+          // textTransform: 'uppercase',
           fontSize: (theme) => theme.typography.pxToRem(16),
           fontWeight: (theme) => theme.typography.fontWeightBold,
+          translate:'0 400%',
+          color:'#9bbabd',
+          ':hover':{
+            bgcolor:'#51777c',
+            color:'#c4d5c4'
+          }
         }}
         
       >
-        About
+        descubrir
       </Button>
       </Link>
       </Grid>

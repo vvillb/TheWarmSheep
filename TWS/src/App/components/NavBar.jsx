@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { AppBar, Box, Button, Drawer, IconButton, List, ListItem, ListItemButton, ListItemText, Toolbar, Typography } from "@mui/material";
+import { AppBar, Grid, Button, Drawer, IconButton, List, ListItem, ListItemButton, ListItemText, Toolbar, Typography } from "@mui/material";
 import { MenuOutlined } from '@mui/icons-material';
 import HideOnScroll from './functions/HideOnScroll';
 import { Link } from 'react-router-dom';
@@ -18,7 +18,7 @@ const NavBar = () => {
   };
 
   const drawer = (
-    <Box sx={{ width: 250 }}>
+    <Grid sx={{ width: 250 }}>
       <List>
         {navItems.map((item) => (
           <ListItem key={item.id} disablePadding>
@@ -30,11 +30,11 @@ const NavBar = () => {
           </ListItem>
         ))}
       </List>
-    </Box>
+    </Grid>
   );
 
   return (
-    <Box sx={{ flexGrow: 1 }}>
+    <Grid sx={{ flexGrow: 1 }}>
       <HideOnScroll>
         <AppBar position="fixed">
           <Toolbar sx={{textAlign:'left'}}>
@@ -48,24 +48,29 @@ const NavBar = () => {
             >
               <MenuOutlined />
             </IconButton>
-            <Box>
+            <Grid>
             <Link to='/'  sx={{ flexGrow: 1 }}>
             <Typography variant="h6" component="div" color="secondary" sx={{ flexGrow: 1 }}>
               The Warm Sheep
             </Typography>
             </Link>
-            </Box>
-            <Box sx={{ display: { xs: 'none', md: 'flex' },justifyContent:'flex-end'}}>
-            <Box sx={{ display:'flex', justifyContent:'flex-end', flexGrow:1}}>
+            </Grid>
+            <Grid sx={{ display: { xs: 'none', md: 'flex' },justifyContent:'flex-end'}}>
+            <Grid sx={{ display:'flex', justifyContent:'flex-end', flexGrow:1}}>
               {navItems.map((item) => (
                 <Link key={item.id} to={item.path} >
-                <Button key={item.id} color="secondary"  >
+                <Button key={item.id} color="secondary"  
+                sx={{
+                  ':hover':{
+                    color:'#51777c'
+                  }
+                }}>
                   {item.title}
                 </Button>
                 </Link>
               ))}
-            </Box>
-            </Box>
+            </Grid>
+            </Grid>
           </Toolbar>
         </AppBar>
         </HideOnScroll>
@@ -77,7 +82,7 @@ const NavBar = () => {
         >
           {drawer}
         </Drawer>
-      </Box>
+      </Grid>
   );
 };
 
