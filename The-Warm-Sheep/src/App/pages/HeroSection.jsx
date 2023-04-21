@@ -1,26 +1,36 @@
 import React from 'react'
 import '../../styles.css'
-import { Box, Button, Card, CardMedia, Grid, Paper, Typography } from '@mui/material'
-import playa from '../../assets/images/playa1.jpg'
+import { Box, Button, Card,  Grid,  Paper, Stack, Typography } from '@mui/material'
+import playa from '../../assets/images/nets.jpg'
 import { Link } from 'react-router-dom'
 
 
 const HeroSection = () => {
   return (
-    <Grid
-      sx={{
-        height: '100vh',
-        background: `url(${playa})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        width:'100vw',
-        flexDirection:'column'
-      }}
+    <Grid container
+    
+    sx={{
+      height: '100vh',
+      background: `url(${playa})`,
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      
+    // display: 'flex',
+    // justifyContent: 'center',
+    // alignItems: 'center',
+      width:'100vw',
+    // flexDirection:'column'
+    
+  }}>
+    <Stack
+    direction={{ xs: 'column', sm: 'row' }}
+    spacing={{ xs: 1, sm: 2, md: 4 }}
+    justifyContent="space-around"
+    alignItems="center"
+    
+      
     >
-      <Grid item
+      <Box
       sx={{
         justifyContent:'left',
         display:'flex'
@@ -35,40 +45,51 @@ const HeroSection = () => {
               }}>
               The Warm Sheep
           </Typography>
-          </Grid>
-          <Grid item>
+          </Box>
+          <Box>
           <Typography variant='h3'
           sx={{
             // fontSize:'clamp(3rem,6vw,6rem)',
               flexDirection: 'column' ,
               flexWrap:'wrap' ,
+              alignItems:"flex-end"
           }}>
               Handmade Knits
           </Typography>
-          </Grid>
-          <Grid item>
+          </Box>
+          </Stack>
+          <Stack spacing={2}
+          direction="row"
+          justifyContent="center"
+          alignItems="center"
+          sx={{
+            width:"100vw"
+          }}>
+          <Box>
       <Link to='/about'>
       <Button
-        variant="contained"
+        variant="outlined"
         color="primary"
         sx={{
           textTransform: 'uppercase',
           fontSize: (theme) => theme.typography.pxToRem(16),
           fontWeight: (theme) => theme.typography.fontWeightBold,
+          
         }}
         
       >
         About
       </Button>
       </Link>
-      </Grid>
+      </Box>
+    </Stack>
     </Grid>
 //     <Box
 //     sx={{
 //         flexGrow:1
 //     }}>
-//   <Grid container>
-//       <Grid item
+//   <Box container>
+//       <Box item
 //             sx={{
               
 //                 position:'absolute',
@@ -94,8 +115,8 @@ const HeroSection = () => {
 //                     src={playa}
                     
 //                 />
-//       </Grid>
-//       <Grid item
+//       </Box>
+//       <Box item
 //       sx={{
 //         maxWidth: '100%',
 //       }}>
@@ -125,8 +146,8 @@ const HeroSection = () => {
 //           }}>
 //               Handmade Knits
 //           </Typography>
-//       </Grid>
-// </Grid></Box>
+//       </Box>
+// </Box></Box>
   )
 }
 

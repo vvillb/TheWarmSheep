@@ -37,7 +37,7 @@ const NavBar = () => {
     <Box sx={{ flexGrow: 1 }}>
       <HideOnScroll>
         <AppBar position="fixed">
-          <Toolbar sx={{textAlign:'left'}}>
+          <Toolbar >
             <IconButton
               size="large"
               edge="start"
@@ -55,8 +55,8 @@ const NavBar = () => {
             </Typography>
             </Link>
             </Box>
-            <Box sx={{ display: { xs: 'none', md: 'flex' },justifyContent:'flex-end'}}>
-            <Box sx={{ display:'flex', justifyContent:'flex-end', flexGrow:1}}>
+            <Box sx={{ display: { xs: 'none', md: 'flex' }}}>
+          
               {navItems.map((item) => (
                 <Link key={item.id} to={item.path} >
                 <Button key={item.id} color="secondary"  >
@@ -64,7 +64,7 @@ const NavBar = () => {
                 </Button>
                 </Link>
               ))}
-            </Box>
+            
             </Box>
           </Toolbar>
         </AppBar>
