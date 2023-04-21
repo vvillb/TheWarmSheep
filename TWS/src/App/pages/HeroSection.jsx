@@ -104,12 +104,14 @@ const HeroSection = () => {
           // textTransform: 'uppercase',
           fontSize: (theme) => theme.typography.pxToRem(16),
           fontWeight: (theme) => theme.typography.fontWeightBold,
-          translate:'0 400%',
+          translate:{sm:'0 400%', xs:'0 100%'},
           color:'#9bbabd',
           ':hover':{
             bgcolor:'#51777c',
-            color:'#c4d5c4'
-          }
+            color:'#c4d5c4',
+            
+          },
+          
         }}
         
       >
