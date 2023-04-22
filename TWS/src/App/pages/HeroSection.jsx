@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, Button, Card, CardMedia, Grid, Paper, Typography } from '@mui/material'
+import { Button, Grid,  Typography } from '@mui/material'
 import playa from '../../assets/images/playa1.jpg'
 import { Link } from 'react-router-dom'
 import '../../index.css'
@@ -104,7 +104,7 @@ const HeroSection = () => {
           // textTransform: 'uppercase',
           fontSize: (theme) => theme.typography.pxToRem(16),
           fontWeight: (theme) => theme.typography.fontWeightBold,
-          translate:{sm:'0 400%', xs:'0 100%'},
+          translate:{sm:'0 300%',lg:'0 250%', xs:'0 100%'},
           color:'#9bbabd',
           ':hover':{
             bgcolor:'#51777c',
