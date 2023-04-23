@@ -7,6 +7,7 @@ import her from '../../assets/images/her.jpg'
 
 import { Image } from '@mui/icons-material'
 import HeroSection from './HeroSection'
+import Footer from '../components/Footer'
 
 
 const HomePage = () => {
@@ -14,9 +15,10 @@ const HomePage = () => {
     <AppLayout>
     <HeroSection/>
     
-    <Grid container >
+    <Grid container 
+    >
           
-      <Grid item xs={12} sm={6}  sx={{ justifyContent:'center', alignContent:'center' ,display:'flex', padding:'5%'}}>
+      <Grid item xs={12} sm={6}  sx={{  backgroundColor:'background.main', justifyContent:'center', alignContent:'center' ,display:'flex', padding:'5%'}}>
         <Card sx={{ maxWidth: 345 }}>
           <CardMedia
             component="img"
@@ -27,7 +29,7 @@ const HomePage = () => {
         </Card>
       </Grid>
 
-      <Grid item xs={12} sm={6}  sx={{ justifyContent:'center', alignContent:'center' ,display:'flex', padding:'5%', flexWrap:'wrap',}}>
+      <Grid item xs={12} sm={6}  sx={{  justifyContent:'center', alignContent:'center' ,display:'flex', padding:'5%', flexWrap:'wrap',}}>
       <Typography variant='h3' gutterBottom>La mejor calidad</Typography>         
       <Typography paragraph >
           Primer texto. Eiusmod aute officia sit enim cupidatat proident nulla. Commodo esse amet labore Lorem voluptate et exercitation. Dolore eiusmod in cillum amet elit sit. Tempor sunt proident elit anim aliquip deserunt nulla nulla commodo id elit.
@@ -37,7 +39,7 @@ const HomePage = () => {
     </Grid>
 
     <Grid container   direction="row-reverse">
-    <Grid item xs={12} sm={6}  sx={{ justifyContent:'center', alignContent:'center' ,display:'flex', padding:'5%'}}>        <Card sx={{ display: 'flex', maxWidth:345}}>
+    <Grid item xs={12} sm={6}  sx={{  backgroundColor:'background.main', justifyContent:'center', alignContent:'center' ,display:'flex', padding:'5%'}}>        <Card sx={{ display: 'flex', maxWidth:345}}>
           <CardMedia
             component="img"
             image={her}
@@ -53,7 +55,7 @@ const HomePage = () => {
         </Typography>
       </Grid>
       <Grid container>
-      <Grid item xs={12} sm={6}  sx={{ justifyContent:'center', alignContent:'center' ,display:'flex', padding:'5%'}}>        <Card sx={{ display: 'flex', maxWidth: 345 }}>
+      <Grid item xs={12} sm={6}  sx={{  backgroundColor:'background.main', justifyContent:'center', alignContent:'center' ,display:'flex', padding:'5%'}}>        <Card sx={{ display: 'flex', maxWidth: 345 }}>
           <CardMedia
             component="img"
             image={beach}
@@ -70,7 +72,8 @@ const HomePage = () => {
       </Grid>
       </Grid>
     </Grid>
-   
+  
+    <Footer/>
     </AppLayout>
 
   )

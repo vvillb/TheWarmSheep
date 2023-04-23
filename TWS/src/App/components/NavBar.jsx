@@ -62,7 +62,7 @@ const NavBar = () => {
                 <Button key={item.id} color="secondary"  
                 sx={{
                   ':hover':{
-                    color:'#51777c'
+                    color:'error.main'
                   }
                 }}>
                   {item.title}

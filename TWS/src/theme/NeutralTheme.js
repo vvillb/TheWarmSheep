@@ -8,7 +8,8 @@ import { createTheme } from "@mui/material";
 export const NeutralTheme=createTheme({
     palette:{
         primary:{
-            main:'#c4d5c4'
+            main:'#c4d5c4',
+            lighter:'#F4F5F7'
         },
         secondary:{
             main:'#9bbabd'
@@ -17,7 +18,7 @@ export const NeutralTheme=createTheme({
             main: '#51777c'
         },
         background:{
-            main:'#f5e7dd'
+            main:'#EAEAE1'
         }
     },
     typography:{

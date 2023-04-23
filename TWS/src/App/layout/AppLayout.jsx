@@ -14,7 +14,9 @@ const AppLayout = ({ children }) => {
         >
           <Toolbar/>
         {children}
+        
         </Box>
+   
     </Box>
   )
 }
