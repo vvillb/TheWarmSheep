@@ -36,7 +36,7 @@ const NavBar = () => {
   return (
     <Grid sx={{ flexGrow: 1 }}>
       <HideOnScroll>
-        <AppBar position="fixed">
+        <AppBar position="fixed" sx={{maxWidth:'100vw'}}>
           <Toolbar sx={{textAlign:'left'}}>
             <IconButton
               size="large"
