@@ -8,6 +8,7 @@ import her from '../../assets/images/her.jpg'
 import { Image } from '@mui/icons-material'
 import HeroSection from './HeroSection'
 import Footer from '../components/Footer'
+import ShowOnScroll from '../components/functions/ShowOnScroll'
 
 
 const HomePage = () => {
@@ -19,6 +20,7 @@ const HomePage = () => {
     >
           
       <Grid item xs={12} sm={6}  sx={{  backgroundColor:'background.main', justifyContent:'center', alignContent:'center' ,display:'flex', padding:'5%'}}>
+        <ShowOnScroll>
         <Card sx={{ maxWidth: 345 }}>
           <CardMedia
             component="img"
@@ -26,9 +28,10 @@ const HomePage = () => {
             alt="An image"
             sx={{  }}
           />
-        </Card>
+        </Card></ShowOnScroll>
       </Grid>
 
+      
       <Grid item xs={12} sm={6}  sx={{  justifyContent:'center', alignContent:'center' ,display:'flex', padding:'5%', flexWrap:'wrap',}}>
       <Typography variant='h3' gutterBottom>La mejor calidad</Typography>         
       <Typography paragraph >
