@@ -4,15 +4,15 @@ import useOnScreen from '../../../assets/hooks/useOnScreen';
 import { useInView } from 'react-intersection-observer';
 
 
-const FadeIn = (props) => {
+const ShowOnScroll = (props) => {
     const { children } = props;
     const { ref, inView, entry } = useInView({
         /* Optional options */
         threshold: 0,
       });
-     const trigger = {inView};
+    const trigger = {inView};
 
-  console.log(inView)
+  console.log(trigger)
     return (
       <Fade   ref={ref} in={inView} hysteresis={0.1} mountOnEnter   direction="up" >
         {children}
@@ -21,4 +21,4 @@ const FadeIn = (props) => {
   }
 
 
-export default FadeIn
+export default ShowOnScroll
