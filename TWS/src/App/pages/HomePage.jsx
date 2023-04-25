@@ -10,6 +10,7 @@ import HeroSection from './HeroSection'
 import Footer from '../components/Footer'
 import FadeIn from '../components/functions/FadeIn'
 import SlideIn from '../components/functions/SlideIn'
+import SlideInRight from '../components/functions/SlideInRight'
 
 
 
@@ -47,6 +48,7 @@ const HomePage = () => {
     <Grid container   direction="row-reverse">
     <Grid item xs={12} sm={6}  sx={{  backgroundColor:'background.main', justifyContent:'center', alignContent:'center' ,display:'flex', padding:'5%'}}>        
     
+    <FadeIn>
     <Card sx={{ display: 'flex', maxWidth:345}}>
           <CardMedia
             component="img"
@@ -55,15 +57,19 @@ const HomePage = () => {
             sx={{ }}
           />
         </Card>
+        </FadeIn>
         </Grid>
         <Grid item xs={12} sm={6}  sx={{ justifyContent:'center', alignContent:'center' ,display:'flex', padding:'5%',flexWrap:'wrap'}}>
-        <Typography variant='h3' gutterBottom>Las manos detrás de todo</Typography>        
+        <SlideInRight>Las manos detrás de todo</SlideInRight>     
         <Typography paragraph>
           Segundo texto. Quis ullamco fugiat non enim cupidatat cillum nisi Lorem. Nostrud consequat pariatur cillum veniam dolore non non cupidatat nisi minim sunt in aliqua amet. Magna ea cupidatat adipisicing consequat ipsum qui dolor. Consequat fugiat aliquip sint nulla irure est nisi.
         </Typography>
       </Grid>
       <Grid container>
-      <Grid item xs={12} sm={6}  sx={{  backgroundColor:'background.main', justifyContent:'center', alignContent:'center' ,display:'flex', padding:'5%'}}>        <Card sx={{ display: 'flex', maxWidth: 345 }}>
+      <Grid item xs={12} sm={6}  sx={{  backgroundColor:'background.main', justifyContent:'center', alignContent:'center' ,display:'flex', padding:'5%'}}>        
+      
+      <FadeIn>
+      <Card sx={{ display: 'flex', maxWidth: 345 }}>
           <CardMedia
             component="img"
             image={beach}
@@ -71,9 +77,10 @@ const HomePage = () => {
             sx={{ }}
           />
         </Card>
+        </FadeIn>
         </Grid>
         <Grid item xs={12} sm={6}  sx={{ justifyContent:'center', alignContent:'center' ,display:'flex', padding:'5%',flexWrap:'wrap'}}>
-        <Typography variant='h3' gutterBottom>Lugares que inspiran</Typography> 
+        <SlideIn>Lugares que inspiran</SlideIn> 
         <Typography paragraph>
           Tercer texto Minim sint laboris Lorem Lorem amet voluptate ullamco aliqua occaecat. Et in sint laborum ea. Reprehenderit eu deserunt enim quis ex elit minim eiusmod amet eu cupidatat. Ex anim irure velit deserunt exercitation in officia aute minim. Adipisicing aliqua adipisicing enim dolor anim dolor Lorem ad qui. Exercitation do magna enim irure pariatur et incididunt aliqua. Consequat nostrud eiusmod minim tempor nisi excepteur ex.
         </Typography>
