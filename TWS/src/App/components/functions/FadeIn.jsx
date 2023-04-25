@@ -1,6 +1,5 @@
 import { useRef } from 'react'
-import {Fade, Slide, useScrollTrigger } from "@mui/material";
-import useOnScreen from '../../../assets/hooks/useOnScreen';
+import {Card, Fade, Slide, useScrollTrigger } from "@mui/material";
 import { useInView } from 'react-intersection-observer';
 
 
@@ -9,14 +8,17 @@ const FadeIn = (props) => {
     const { ref, inView, entry } = useInView({
         /* Optional options */
         threshold: 0,
+        triggerOnce: false
       });
      const trigger = {inView};
-
+console.log(trigger)
   console.log(inView)
     return (
-      <Fade   ref={ref} in={inView} hysteresis={0.1} mountOnEnter   direction="up" >
+      <Card  ref={ref} sx={{ maxWidth: 345 }}>
+      <Fade  timeout={500}  in={inView} hysteresis={0.1} mountOnEnter  unmountOnExit direction="up" >
         {children}
       </Fade>
+      </Card>
     );
   }
 

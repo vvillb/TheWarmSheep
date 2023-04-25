@@ -9,7 +9,7 @@ import { Image } from '@mui/icons-material'
 import HeroSection from './HeroSection'
 import Footer from '../components/Footer'
 import FadeIn from '../components/functions/FadeIn'
-import SlideIn from '../components/functions/SlideIn'
+
 
 
 const HomePage = () => {
@@ -44,7 +44,9 @@ const HomePage = () => {
     </Grid>
 
     <Grid container   direction="row-reverse">
-    <Grid item xs={12} sm={6}  sx={{  backgroundColor:'background.main', justifyContent:'center', alignContent:'center' ,display:'flex', padding:'5%'}}>        <Card sx={{ display: 'flex', maxWidth:345}}>
+    <Grid item xs={12} sm={6}  sx={{  backgroundColor:'background.main', justifyContent:'center', alignContent:'center' ,display:'flex', padding:'5%'}}>        
+    
+    <Card sx={{ display: 'flex', maxWidth:345}}>
           <CardMedia
             component="img"
             image={her}
