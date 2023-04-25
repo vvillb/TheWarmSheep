@@ -8,6 +8,7 @@ const SlideInRight = (props) => {
     const { ref, inView } = useInView({
         /* Optional options */
         threshold: 0,
+        triggerOnce: true
       });
     const trigger = {inView};
 

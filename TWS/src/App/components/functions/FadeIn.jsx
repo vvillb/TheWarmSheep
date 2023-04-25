@@ -8,7 +8,7 @@ const FadeIn = (props) => {
     const { ref, inView, entry } = useInView({
         /* Optional options */
         threshold: 0,
-        triggerOnce: false
+        triggerOnce: true
       });
      const trigger = {inView};
 console.log(trigger)
