@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import AppLayout from '../layout/AppLayout'
 import { Box, Grid, Typography ,Card,CardMedia,Container} from '@mui/material'
 import knits from '../../assets/images/img3.jpg'
@@ -15,6 +15,10 @@ import SlideInRight from '../components/functions/SlideInRight'
 
 
 const HomePage = () => {
+  useEffect(()=>{
+    window.scrollTo(0,0);
+  
+  },[])
   return (
     <AppLayout>
     <HeroSection/>

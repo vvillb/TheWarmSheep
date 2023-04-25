@@ -1,9 +1,13 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import AppLayout from '../layout/AppLayout'
 import { Typography } from '@mui/material'
 
 
 const ContactPage = () => {
+  useEffect(()=>{
+    window.scrollTo(0,0);
+  
+  },[])
   return (
     <AppLayout>
         <Typography variant='h1'>
