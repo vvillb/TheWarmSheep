@@ -1,5 +1,5 @@
 import { useRef } from 'react'
-import { Slide } from "@mui/material";
+import { Card, Grid, Slide, Typography } from "@mui/material";
 import { useInView } from 'react-intersection-observer';
 
 
@@ -12,10 +12,14 @@ const SlideIn = (props) => {
     const trigger = {inView};
 
   console.log(trigger)
-    return (
-      <Slide   ref={ref} in={inView} hysteresis={0.1} mountOnEnter   direction="up" >
+    return (  
+    <Grid item ref={ref}>
+    <Slide    in={inView} hysteresis={0.1} mountOnEnter   direction="left" >
+    <Typography   variant='h3' gutterBottom>
         {children}
-      </Slide>
+    </Typography>    
+    </Slide>
+    </Grid>
     );
   }
 

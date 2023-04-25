@@ -9,6 +9,7 @@ import { Image } from '@mui/icons-material'
 import HeroSection from './HeroSection'
 import Footer from '../components/Footer'
 import FadeIn from '../components/functions/FadeIn'
+import SlideIn from '../components/functions/SlideIn'
 
 
 
@@ -22,7 +23,7 @@ const HomePage = () => {
           
       <Grid item xs={12} sm={6}  sx={{  backgroundColor:'background.main', justifyContent:'center', alignContent:'center' ,display:'flex', padding:'5%'}}>
         <FadeIn>
-        <Card sx={{ maxWidth: 345 }}>
+        <Card sx={{ maxWidth: 345 , backgroundColor:'transparent'}}>
           <CardMedia
             component="img"
             image={knits}
@@ -35,7 +36,7 @@ const HomePage = () => {
 
      
       <Grid item xs={12} sm={6}  sx={{  justifyContent:'center', alignContent:'center' ,display:'flex', padding:'5%', flexWrap:'wrap',}}>
-      <Typography variant='h3' gutterBottom>La mejor calidad</Typography>         
+      <SlideIn>La mejor calidad</SlideIn>     
        <Typography paragraph >
           Primer texto. Eiusmod aute officia sit enim cupidatat proident nulla. Commodo esse amet labore Lorem voluptate et exercitation. Dolore eiusmod in cillum amet elit sit. Tempor sunt proident elit anim aliquip deserunt nulla nulla commodo id elit.
         </Typography>
