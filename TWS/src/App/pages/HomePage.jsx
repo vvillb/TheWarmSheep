@@ -27,7 +27,7 @@ const HomePage = () => {
     >
           
       <Grid item xs={12} sm={6}  sx={{  backgroundColor:'background.main', justifyContent:'center', alignContent:'center' ,display:'flex', padding:'5%'}}>
-        <FadeIn>
+       
         <Card sx={{ maxWidth: 345 , backgroundColor:'transparent'}}>
           <CardMedia
             component="img"
@@ -36,7 +36,7 @@ const HomePage = () => {
             sx={{  }}
           />
         </Card>
-        </FadeIn>
+       
       </Grid>
 
      
@@ -52,7 +52,7 @@ const HomePage = () => {
     <Grid container   direction="row-reverse">
     <Grid item xs={12} sm={6}  sx={{  backgroundColor:'background.main', justifyContent:'center', alignContent:'center' ,display:'flex', padding:'5%'}}>        
     
-    <FadeIn>
+   
     <Card sx={{ display: 'flex', maxWidth:345}}>
           <CardMedia
             component="img"
@@ -61,7 +61,7 @@ const HomePage = () => {
             sx={{ }}
           />
         </Card>
-        </FadeIn>
+       
         </Grid>
         <Grid item xs={12} sm={6}  sx={{ justifyContent:'center', alignContent:'center' ,display:'flex', padding:'5%',flexWrap:'wrap'}}>
         <SlideInRight>Las manos detrás de todo</SlideInRight>     
@@ -72,7 +72,7 @@ const HomePage = () => {
       <Grid container>
       <Grid item xs={12} sm={6}  sx={{  backgroundColor:'background.main', justifyContent:'center', alignContent:'center' ,display:'flex', padding:'5%'}}>        
       
-      <FadeIn>
+     
       <Card sx={{ display: 'flex', maxWidth: 345 }}>
           <CardMedia
             component="img"
@@ -81,7 +81,7 @@ const HomePage = () => {
             sx={{ }}
           />
         </Card>
-        </FadeIn>
+       
         </Grid>
         <Grid item xs={12} sm={6}  sx={{ justifyContent:'center', alignContent:'center' ,display:'flex', padding:'5%',flexWrap:'wrap'}}>
         <SlideIn>Lugares que inspiran</SlideIn> 
