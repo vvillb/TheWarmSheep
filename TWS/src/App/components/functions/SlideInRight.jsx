@@ -8,14 +8,14 @@ const SlideInRight = (props) => {
     const { ref, inView } = useInView({
         /* Optional options */
         threshold: 0,
-        triggerOnce: true
+        triggerOnce: false
       });
     const trigger = {inView};
 
   console.log(trigger)
     return (  
     <Grid item ref={ref}>
-    <Slide    in={inView} hysteresis={0.1} mountOnEnter   direction="right" >
+    <Slide    in={inView} hysteresis={0.1} mountOnEnter   direction="right"  timeout={1000}>
     <Typography   variant='h3' gutterBottom>
         {children}
     </Typography>    

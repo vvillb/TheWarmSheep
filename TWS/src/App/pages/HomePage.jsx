@@ -11,7 +11,7 @@ import Footer from '../components/Footer'
 import FadeIn from '../components/functions/FadeIn'
 import SlideIn from '../components/functions/SlideIn'
 import SlideInRight from '../components/functions/SlideInRight'
-
+import playa from '../../assets/images/playa.jpg'
 
 
 const HomePage = () => {
