@@ -34,10 +34,11 @@ const NavBar = () => {
   );
 
   return (
-    <Grid sx={{ flexGrow: 1 }}>
-      <HideOnScroll>
-        <AppBar position="fixed" sx={{maxWidth:'100vw'}}>
-          <Toolbar sx={{textAlign:'left'}}>
+    <Grid justifyContent="space-around" sx={{ flexGrow: 1 }}>
+      <HideOnScroll> 
+       
+        <AppBar   position="fixed" sx={{maxWidth:'100vw'}}>
+          <Toolbar  sx={{textAlign:'left', justifyContent:'space-around'}}>
             <IconButton
               size="large"
               edge="start"
@@ -48,14 +49,14 @@ const NavBar = () => {
             >
               <MenuOutlined />
             </IconButton>
-            <Grid>
+            <Grid  container justifyContent='flex-start'>
             <Link to='/'  sx={{ flexGrow: 1 }}>
             <Typography variant="h6" component="div" color="secondary" sx={{ flexGrow: 1 }}>
               The Warm Sheep
             </Typography>
             </Link>
             </Grid>
-            <Grid sx={{ display: { xs: 'none', md: 'flex' },justifyContent:'flex-end'}}>
+            <Grid container sx={{ display: { xs: 'none', md: 'flex' },justifyContent:'flex-end'}}>
             <Grid sx={{ display:'flex', justifyContent:'flex-end', flexGrow:1}}>
               {navItems.map((item) => (
                 <Link key={item.id} to={item.path} >
