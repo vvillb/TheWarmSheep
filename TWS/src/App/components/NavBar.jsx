@@ -57,7 +57,7 @@ const NavBar = () => {
             </Typography>
             </Link>
             </Grid>
-            <Grid container sx={{ display: { xs: 'none', md: 'flex' },justifyContent:'flex-end'}}>
+            <Grid container sx={{ display: { xs: 'none', md: 'flex' }}}>
             <Grid sx={{ display:'flex', justifyContent:'flex-end', flexGrow:1}}>
               {navItems.map((item) => (
                 <Link key={item.id} to={item.path} >
