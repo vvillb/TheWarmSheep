@@ -12,6 +12,7 @@ import FadeIn from '../components/functions/FadeIn'
 import SlideIn from '../components/functions/SlideIn'
 import SlideInRight from '../components/functions/SlideInRight'
 import lanas from '../../assets/images/products/lanaBlanca2.jpg'
+import Lau from '../../assets/videos/paisajeChapona.mp4'
 
 
 const HomePage = () => {
@@ -55,10 +56,12 @@ const HomePage = () => {
    
     <Card sx={{ display: 'flex', maxWidth:345}}>
           <CardMedia
-            component="img"
-            image={her}
+            component="video"
+            image={Lau}
             alt="An image"
-            sx={{ }}
+            autoPlay
+            loop
+            muted
           />
         </Card>
        
