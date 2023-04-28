@@ -204,28 +204,7 @@ const ProductGallery = () => {
         </ImageListItem>
         <ImageListItem >
           <img
-            src={jerseyAzul2}
-            alt='Set Naranja'
-            loading="lazy"
-          />
-        </ImageListItem>
-        <ImageListItem >
-          <img
-            src={jerseyAzul3}
-            alt='Set Naranja'
-            loading="lazy"
-          />
-        </ImageListItem>
-        <ImageListItem >
-          <img
-            src={jerseyAzul4}
-            alt='Set Naranja'
-            loading="lazy"
-          />
-        </ImageListItem>
-        <ImageListItem >
-          <img
-            src={jerseyAzul5}
+            src={beanieAzul}
             alt='Set Naranja'
             loading="lazy"
           />

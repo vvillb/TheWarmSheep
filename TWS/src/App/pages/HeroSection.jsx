@@ -95,7 +95,7 @@ const HeroSection = () => {
           alignItems="center"
           >
           <Grid item>
-      <Link to='/about'>
+      <Link to='/products'>
       <Button
         variant="contained"
        

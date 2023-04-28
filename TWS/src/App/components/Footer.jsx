@@ -7,6 +7,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 
 const Footer = () => {
   return (
+    
     <Grid container  
     direction="row"
     // position="fixed"

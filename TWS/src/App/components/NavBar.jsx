@@ -38,7 +38,7 @@ const NavBar = () => {
     <Grid justifyContent="space-around" sx={{ flexGrow: 1 }}>
       <HideOnScroll> 
        
-        <AppBar   position="fixed" sx={{maxWidth:'100vw'}}>
+        <AppBar   sx={{maxWidth:'100vw'}}>
           <Toolbar  sx={{textAlign:'left', justifyContent:'space-around'}}>
             <IconButton
               size="large"
