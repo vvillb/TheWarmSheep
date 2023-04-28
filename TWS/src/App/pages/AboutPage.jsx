@@ -1,11 +1,12 @@
 import React, { useEffect } from 'react'
 import AppLayout from '../layout/AppLayout'
-import { Card, CardContent, Typography } from '@mui/material'
-import CardCover from '@mui/joy/CardCover';
 import Footer from '../components/Footer'
 import knits from '../../assets/images/img3.jpg'
 import PhotoLeftTextRight from '../components/PhotoLeftTextRight'
 import PhotoRightTextLeft from '../components/PhotoRightTextLeft'
+import video1 from '../../assets/videos/paisajeChapona.mp4'
+import { Card, CardMedia, Grid, Typography } from '@mui/material'
+import SlideIn from '../components/functions/SlideIn'
 
 
 
@@ -16,31 +17,39 @@ const AboutPage = () => {
   },[])
   return (
     <AppLayout>
-        <Card component="li" sx={{ minWidth: 300, flexGrow: 1 }}>
-        <CardCover>
-          <video
+
+
+<Grid container 
+    >
+          
+      <Grid item xs={12} sm={6}  sx={{  backgroundColor:'background.main', justifyContent:'center', alignContent:'center' ,display:'flex', padding:'5%'}}>
+       
+        <Card sx={{ maxWidth: 345 , backgroundColor:'transparent'}}>
+          <CardMedia
+            component="video"
+            image={video1}
+            alt="An image"
             autoPlay
             loop
             muted
-            poster='../../assets/images/products/paisajeRisco.jpg'
-          >
-            <source
-              src="../../assets/videos/paisajeChapona.mp4"
-              type="video/mp4"
-            />
-          </video>
-        </CardCover>
-        <CardContent>
-          <Typography
-            level="h6"
-            fontWeight="lg"
-            textColor="#fff"
-            mt={{ xs: 12, sm: 18 }}
-          >
-            Video
-          </Typography>
-        </CardContent>
-      </Card>
+            
+            sx={{autoPlay:'true',
+              loop:'true',
+              muted:'true'  }}
+          />
+        </Card>
+       
+      </Grid>
+      
+      <Grid item xs={12} sm={6}  sx={{  justifyContent:'center', alignContent:'center' ,display:'flex', padding:'5%', flexWrap:'wrap',}}>
+      <SlideIn>test</SlideIn>     
+       <Typography paragraph >
+        Magna aute labore ea veniam officia adipisicing esse. Officia eu adipisicing fugiat duis non aliquip dolore Lorem culpa laboris proident. Sunt reprehenderit enim dolore laboris proident id exercitation. Nostrud duis exercitation qui occaecat. Ad ea aliquip sint excepteur consequat laborum cillum ullamco sit laboris ad veniam ex quis. Labore exercitation anim id et ad deserunt non aliquip irure.
+        </Typography>
+      </Grid>
+      
+    </Grid>
+   
       <PhotoRightTextLeft image={knits}  titulo="about" >
         Voluptate velit pariatur sint quis irure nulla officia elit ea dolore cupidatat labore. Irure labore eu id esse. Amet amet minim ut laboris.
       </PhotoRightTextLeft>

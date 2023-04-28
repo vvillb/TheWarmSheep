@@ -4,14 +4,14 @@ import { Box, Grid, Typography ,Card,CardMedia,Container} from '@mui/material'
 import knits from '../../assets/images/img3.jpg'
 import beach from '../../assets/images/playaAsturias.jpg'
 import her from '../../assets/images/her.jpg'
-
+import videoSunset from '../../assets/videos/PaisajeSunset1.mp4'
 import { Image } from '@mui/icons-material'
 import HeroSection from './HeroSection'
 import Footer from '../components/Footer'
 import FadeIn from '../components/functions/FadeIn'
 import SlideIn from '../components/functions/SlideIn'
 import SlideInRight from '../components/functions/SlideInRight'
-import playa from '../../assets/images/playa.jpg'
+import lanas from '../../assets/images/products/lanaBlanca2.jpg'
 
 
 const HomePage = () => {
@@ -31,9 +31,9 @@ const HomePage = () => {
         <Card sx={{ maxWidth: 345 , backgroundColor:'transparent'}}>
           <CardMedia
             component="img"
-            image={knits}
+            image={lanas}
             alt="An image"
-            sx={{  }}
+            sx={{ }}
           />
         </Card>
        
@@ -75,10 +75,13 @@ const HomePage = () => {
      
       <Card sx={{ display: 'flex', maxWidth: 345 }}>
           <CardMedia
-            component="img"
-            image={beach}
+            component="video"
+            image={videoSunset}
             alt="An image"
-            sx={{ }}
+            autoPlay
+            loop
+            muted
+            
           />
         </Card>
        
