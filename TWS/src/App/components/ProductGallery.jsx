@@ -38,6 +38,7 @@ import jerseyVerde1 from  '../../assets/images/products/jerseyVerde1.jpg'
 import jerseyVerde2 from  '../../assets/images/products/jerseyVerde2.jpg'
 import mittensVerdes1 from  '../../assets/images/products/mittensVerdes1.jpg'
 import mittensVerdes2 from  '../../assets/images/products/mittensVerdes2.jpg'
+import ZaraLikeLayout from './ZaraLikeLayout'
 
 
 
@@ -45,263 +46,270 @@ import mittensVerdes2 from  '../../assets/images/products/mittensVerdes2.jpg'
 
 const ProductGallery = () => {
   return (
-    <Box sx={{ padding:'2%'}}>
-    <ImageList variant="masonry" cols={3} gap={8}>
-      
-        <ImageListItem >
-          <img
-            src={setNaranja1}
-            alt='Set Naranja'
-            loading="lazy"
-          />
-        </ImageListItem>
-        <ImageListItem >
-          <img
-            src={setNaranja2}
-            alt='Set Naranja'
-            loading="lazy"
-          />
-        </ImageListItem>
-        <ImageListItem >
-          <img
-            src={balaclavaAzul1}
-            alt='Set Naranja'
-            loading="lazy"
-          />
-        </ImageListItem>
-        <ImageListItem >
-          <img
-            src={balaclavaAzul2}
-            alt='Set Naranja'
-            loading="lazy"
-          />
-        </ImageListItem>
-        <ImageListItem >
-          <img
-            src={balaclavaAzul3}
-            alt='Set Naranja'
-            loading="lazy"
-          />
-        </ImageListItem>
-        <ImageListItem >
-          <img
-            src={balaclavaRosa1}
-            alt='Set Naranja'
-            loading="lazy"
-          />
-        </ImageListItem>
-        <ImageListItem >
-          <img
-            src={balaclavaRosa2}
-            alt='Set Naranja'
-            loading="lazy"
-          />
-        </ImageListItem>
-        <ImageListItem >
-          <img
-            src={BalaclavaRosa3}
-            alt='Set Naranja'
-            loading="lazy"
-          />
-        </ImageListItem>
-        <ImageListItem >
-          <img
-            src={beanieAzul}
-            alt='Set Naranja'
-            loading="lazy"
-          />
-        </ImageListItem>
-        <ImageListItem >
-          <img
-            src={BolsoVerde3}
-            alt='Set Naranja'
-            loading="lazy"
-          />
-        </ImageListItem>
-        <ImageListItem >
-          <img
-            src={BolsoVerde4}
-            alt='Set Naranja'
-            loading="lazy"
-          />
-        </ImageListItem>
-        <ImageListItem >
-          <img
-            src={BolsoVerde5}
-            alt='Set Naranja'
-            loading="lazy"
-          />
-        </ImageListItem>
-        <ImageListItem >
-          <img
-            src={bufandaMarron1}
-            alt='Set Naranja'
-            loading="lazy"
-          />
-        </ImageListItem>
-        <ImageListItem >
-          <img
-            src={bufandaMarron2}
-            alt='Set Naranja'
-            loading="lazy"
-          />
-        </ImageListItem>
-        <ImageListItem >
-          <img
-            src={bufandaMarron3}
-            alt='Set Naranja'
-            loading="lazy"
-          />
-        </ImageListItem>
-        <ImageListItem >
-          <img
-            src={bufandaMarron4}
-            alt='Set Naranja'
-            loading="lazy"
-          />
-        </ImageListItem>
-        <ImageListItem >
-          <img
-            src={bufandaMarron5}
-            alt='Set Naranja'
-            loading="lazy"
-          />
-        </ImageListItem>
-        <ImageListItem >
-          <img
-            src={bufandaMarron6}
-            alt='Set Naranja'
-            loading="lazy"
-          />
-        </ImageListItem>
-        <ImageListItem >
-          <img
-            src={bufandaVerde2}
-            alt='Set Naranja'
-            loading="lazy"
-          />
-        </ImageListItem>
-        <ImageListItem >
-          <img
-            src={bufandaVerde1}
-            alt='Set Naranja'
-            loading="lazy"
-          />
-        </ImageListItem>
-        <ImageListItem >
-          <img
-            src={cuelloVErde}
-            alt='Set Naranja'
-            loading="lazy"
-          />
-        </ImageListItem>
-        <ImageListItem >
-          <img
-            src={jerseyAzul1}
-            alt='Set Naranja'
-            loading="lazy"
-          />
-        </ImageListItem>
-        <ImageListItem >
-          <img
-            src={beanieAzul}
-            alt='Set Naranja'
-            loading="lazy"
-          />
-        </ImageListItem>
-        <ImageListItem >
-          <img
-            src={jerseyAzul6}
-            alt='Set Naranja'
-            loading="lazy"
-          />
-        </ImageListItem>
-        <ImageListItem >
-          <img
-            src={JerseyMangas1}
-            alt='Set Naranja'
-            loading="lazy"
-          />
-        </ImageListItem>
-        <ImageListItem >
-          <img
-            src={JerseyMangas2}
-            alt='Set Naranja'
-            loading="lazy"
-          />
-        </ImageListItem>
-        <ImageListItem >
-          <img
-            src={JerseyMangas3}
-            alt='Set Naranja'
-            loading="lazy"
-          />
-        </ImageListItem>
-        <ImageListItem >
-          <img
-            src={JerseyMangas4}
-            alt='Set Naranja'
-            loading="lazy"
-          />
-        </ImageListItem>
-        <ImageListItem >
-          <img
-            src={JerseyMangas5}
-            alt='Set Naranja'
-            loading="lazy"
-          />
-        </ImageListItem>
-        <ImageListItem >
-          <img
-            src={jerseyMulticolor1}
-            alt='Set Naranja'
-            loading="lazy"
-          />
-        </ImageListItem>
-        <ImageListItem >
-          <img
-            src={jerseyMulticolor2}
-            alt='Set Naranja'
-            loading="lazy"
-          />
-        </ImageListItem>
-        <ImageListItem >
-          <img
-            src={jerseyVerde1}
-            alt='Set Naranja'
-            loading="lazy"
-          />
-        </ImageListItem>
-        <ImageListItem >
-          <img
-            src={jerseyVerde2}
-            alt='Set Naranja'
-            loading="lazy"
-          />
-        </ImageListItem>
-        <ImageListItem >
-          <img
-            src={mittensVerdes1}
-            alt='Set Naranja'
-            loading="lazy"
-          />
-        </ImageListItem>
-        <ImageListItem >
-          <img
-            src={mittensVerdes2}
-            alt='Set Naranja'
-            loading="lazy"
-          />
-        </ImageListItem>
-      
-
-
-      
-    </ImageList>
-  </Box>
-  );
+    <ZaraLikeLayout
+    texto1="fjskfhd"
+    foto1={setNaranja1}
+    foto2={setNaranja1}
+    foto3={setNaranja1}
+    fotoGrande={setNaranja1}
+    
+    />
+   )
 }
 
 export default ProductGallery
 
+  //   <Box sx={{ padding:'2%'}}>
+  //   <ImageList variant="masonry" cols={3} gap={8}>
+      
+  //       <ImageListItem >
+  //         <img
+  //           src={setNaranja1}
+  //           alt='Set Naranja'
+  //           loading="lazy"
+  //         />
+  //       </ImageListItem>
+  //       <ImageListItem >
+  //         <img
+  //           src={setNaranja2}
+  //           alt='Set Naranja'
+  //           loading="lazy"
+  //         />
+  //       </ImageListItem>
+  //       <ImageListItem >
+  //         <img
+  //           src={balaclavaAzul1}
+  //           alt='Set Naranja'
+  //           loading="lazy"
+  //         />
+  //       </ImageListItem>
+  //       <ImageListItem >
+  //         <img
+  //           src={balaclavaAzul2}
+  //           alt='Set Naranja'
+  //           loading="lazy"
+  //         />
+  //       </ImageListItem>
+  //       <ImageListItem >
+  //         <img
+  //           src={balaclavaAzul3}
+  //           alt='Set Naranja'
+  //           loading="lazy"
+  //         />
+  //       </ImageListItem>
+  //       <ImageListItem >
+  //         <img
+  //           src={balaclavaRosa1}
+  //           alt='Set Naranja'
+  //           loading="lazy"
+  //         />
+  //       </ImageListItem>
+  //       <ImageListItem >
+  //         <img
+  //           src={balaclavaRosa2}
+  //           alt='Set Naranja'
+  //           loading="lazy"
+  //         />
+  //       </ImageListItem>
+  //       <ImageListItem >
+  //         <img
+  //           src={BalaclavaRosa3}
+  //           alt='Set Naranja'
+  //           loading="lazy"
+  //         />
+  //       </ImageListItem>
+  //       <ImageListItem >
+  //         <img
+  //           src={beanieAzul}
+  //           alt='Set Naranja'
+  //           loading="lazy"
+  //         />
+  //       </ImageListItem>
+  //       <ImageListItem >
+  //         <img
+  //           src={BolsoVerde3}
+  //           alt='Set Naranja'
+  //           loading="lazy"
+  //         />
+  //       </ImageListItem>
+  //       <ImageListItem >
+  //         <img
+  //           src={BolsoVerde4}
+  //           alt='Set Naranja'
+  //           loading="lazy"
+  //         />
+  //       </ImageListItem>
+  //       <ImageListItem >
+  //         <img
+  //           src={BolsoVerde5}
+  //           alt='Set Naranja'
+  //           loading="lazy"
+  //         />
+  //       </ImageListItem>
+  //       <ImageListItem >
+  //         <img
+  //           src={bufandaMarron1}
+  //           alt='Set Naranja'
+  //           loading="lazy"
+  //         />
+  //       </ImageListItem>
+  //       <ImageListItem >
+  //         <img
+  //           src={bufandaMarron2}
+  //           alt='Set Naranja'
+  //           loading="lazy"
+  //         />
+  //       </ImageListItem>
+  //       <ImageListItem >
+  //         <img
+  //           src={bufandaMarron3}
+  //           alt='Set Naranja'
+  //           loading="lazy"
+  //         />
+  //       </ImageListItem>
+  //       <ImageListItem >
+  //         <img
+  //           src={bufandaMarron4}
+  //           alt='Set Naranja'
+  //           loading="lazy"
+  //         />
+  //       </ImageListItem>
+  //       <ImageListItem >
+  //         <img
+  //           src={bufandaMarron5}
+  //           alt='Set Naranja'
+  //           loading="lazy"
+  //         />
+  //       </ImageListItem>
+  //       <ImageListItem >
+  //         <img
+  //           src={bufandaMarron6}
+  //           alt='Set Naranja'
+  //           loading="lazy"
+  //         />
+  //       </ImageListItem>
+  //       <ImageListItem >
+  //         <img
+  //           src={bufandaVerde2}
+  //           alt='Set Naranja'
+  //           loading="lazy"
+  //         />
+  //       </ImageListItem>
+  //       <ImageListItem >
+  //         <img
+  //           src={bufandaVerde1}
+  //           alt='Set Naranja'
+  //           loading="lazy"
+  //         />
+  //       </ImageListItem>
+  //       <ImageListItem >
+  //         <img
+  //           src={cuelloVErde}
+  //           alt='Set Naranja'
+  //           loading="lazy"
+  //         />
+  //       </ImageListItem>
+  //       <ImageListItem >
+  //         <img
+  //           src={jerseyAzul1}
+  //           alt='Set Naranja'
+  //           loading="lazy"
+  //         />
+  //       </ImageListItem>
+  //       <ImageListItem >
+  //         <img
+  //           src={beanieAzul}
+  //           alt='Set Naranja'
+  //           loading="lazy"
+  //         />
+  //       </ImageListItem>
+  //       <ImageListItem >
+  //         <img
+  //           src={jerseyAzul6}
+  //           alt='Set Naranja'
+  //           loading="lazy"
+  //         />
+  //       </ImageListItem>
+  //       <ImageListItem >
+  //         <img
+  //           src={JerseyMangas1}
+  //           alt='Set Naranja'
+  //           loading="lazy"
+  //         />
+  //       </ImageListItem>
+  //       <ImageListItem >
+  //         <img
+  //           src={JerseyMangas2}
+  //           alt='Set Naranja'
+  //           loading="lazy"
+  //         />
+  //       </ImageListItem>
+  //       <ImageListItem >
+  //         <img
+  //           src={JerseyMangas3}
+  //           alt='Set Naranja'
+  //           loading="lazy"
+  //         />
+  //       </ImageListItem>
+  //       <ImageListItem >
+  //         <img
+  //           src={JerseyMangas4}
+  //           alt='Set Naranja'
+  //           loading="lazy"
+  //         />
+  //       </ImageListItem>
+  //       <ImageListItem >
+  //         <img
+  //           src={JerseyMangas5}
+  //           alt='Set Naranja'
+  //           loading="lazy"
+  //         />
+  //       </ImageListItem>
+  //       <ImageListItem >
+  //         <img
+  //           src={jerseyMulticolor1}
+  //           alt='Set Naranja'
+  //           loading="lazy"
+  //         />
+  //       </ImageListItem>
+  //       <ImageListItem >
+  //         <img
+  //           src={jerseyMulticolor2}
+  //           alt='Set Naranja'
+  //           loading="lazy"
+  //         />
+  //       </ImageListItem>
+  //       <ImageListItem >
+  //         <img
+  //           src={jerseyVerde1}
+  //           alt='Set Naranja'
+  //           loading="lazy"
+  //         />
+  //       </ImageListItem>
+  //       <ImageListItem >
+  //         <img
+  //           src={jerseyVerde2}
+  //           alt='Set Naranja'
+  //           loading="lazy"
+  //         />
+  //       </ImageListItem>
+  //       <ImageListItem >
+  //         <img
+  //           src={mittensVerdes1}
+  //           alt='Set Naranja'
+  //           loading="lazy"
+  //         />
+  //       </ImageListItem>
+  //       <ImageListItem >
+  //         <img
+  //           src={mittensVerdes2}
+  //           alt='Set Naranja'
+  //           loading="lazy"
+  //         />
+  //       </ImageListItem>
+      
 
+
+      
+  //   </ImageList>
+  // </Box>
