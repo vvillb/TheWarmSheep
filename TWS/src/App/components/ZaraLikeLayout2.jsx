@@ -4,9 +4,9 @@ import React from 'react'
 const ZaraLikeLayout2 = (props) => {
     const {texto1,texto2,texto3,texto4,foto1,foto2,foto3,foto4}=props;
   return (
-    <Grid container>
+    <Grid container sx={{maxWidth:'100vw'}}>
     <Grid item xs={6} sm={8}>
-    <Card sx={{  backgroundColor:'transparent'}}>
+    <Card sx={{  backgroundColor:'transparent',display:'flex',alignItems:'center'}}>
       <CardMedia
         component="img"
         image={foto1}
@@ -14,13 +14,13 @@ const ZaraLikeLayout2 = (props) => {
         sx={{  }}
       />
     </Card>
-     <Typography sx={{backgroundColor:'transparent'}}>
+     <Typography sx={{backgroundColor:'transparent',display:'flex',alignItems:'center'}}>
             {texto1}
     </Typography>
         
     </Grid>
     <Grid item xs={6} sm={4}>
-    <Card sx={{  backgroundColor:'transparent'}}>
+    <Card sx={{  backgroundColor:'transparent',display:'flex',alignItems:'center'}}>
       <CardMedia
         component="img"
         image={foto2}
@@ -28,12 +28,12 @@ const ZaraLikeLayout2 = (props) => {
         sx={{  }}
       />
     </Card>
-     <Typography sx={{backgroundColor:'transparent'}}>
+     <Typography sx={{backgroundColor:'transparent',display:'flex',alignItems:'center'}}>
             {texto2}
     </Typography>
 
     </Grid>
-    <Grid item xs={6} sm={4}>
+    <Grid item xs={12} sm={4}>
     <Card sx={{ backgroundColor:'transparent'}}>
       <CardMedia
         component="img"
@@ -46,7 +46,7 @@ const ZaraLikeLayout2 = (props) => {
             {texto3}
     </Typography>
     </Grid>
-    <Grid item xs={6} sm={8}>
+    <Grid item xs={12} sm={8}>
     <Card sx={{  backgroundColor:'transparent'}}>
       <CardMedia
         component="img"

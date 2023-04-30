@@ -39,6 +39,7 @@ import jerseyVerde2 from  '../../assets/images/products/jerseyVerde2.jpg'
 import mittensVerdes1 from  '../../assets/images/products/mittensVerdes1.jpg'
 import mittensVerdes2 from  '../../assets/images/products/mittensVerdes2.jpg'
 import ZaraLikeLayout from './ZaraLikeLayout'
+import ZaraLikeLayout2 from './ZaraLikeLayout2'
 
 
 
@@ -46,14 +47,29 @@ import ZaraLikeLayout from './ZaraLikeLayout'
 
 const ProductGallery = () => {
   return (
+    <>
     <ZaraLikeLayout
     texto1="fjskfhd"
     foto1={setNaranja1}
     foto2={setNaranja1}
     foto3={setNaranja1}
     fotoGrande={setNaranja1}
-    
     />
+    <ZaraLikeLayout2
+    texto1="fjskfhd"
+    foto1={setNaranja1}
+    foto2={setNaranja1}
+    foto3={setNaranja1}
+    foto4={setNaranja1}
+    />
+    <ZaraLikeLayout
+    texto1="fjskfhd"
+    foto1={setNaranja1}
+    foto2={setNaranja1}
+    foto3={setNaranja1}
+    fotoGrande={setNaranja1}
+    />
+    </>
    )
 }
 

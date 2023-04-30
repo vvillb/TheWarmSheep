@@ -5,23 +5,23 @@ const ZaraLikeLayout = (props) => {
     const {texto1,texto2,texto3,foto1,foto2,foto3,fotoGrande}=props;
 
   return (
-    <Grid container>
-        <Grid item xs={12} sm={4}>
-        <Card sx={{  backgroundColor:'transparent'}}>
+    <Grid container sx={{maxWidth:'100vw'}}>
+        <Grid item xs={6} sm={4}>
+        <Card sx={{ maxHeight:'75vh', backgroundColor:'transparent' ,display:'flex',alignItems:'center'}}>
           <CardMedia
             component="img"
             image={foto1}
             alt="An image"
             sx={{  }}
           />
-        </Card>
+        </Card >
          <Typography sx={{backgroundColor:'transparent'}}>
                 {texto1}
         </Typography>
             
         </Grid>
-        <Grid item xs={12} sm={4}>
-        <Card sx={{  backgroundColor:'transparent'}}>
+        <Grid item xs={6} sm={4}>
+        <Card sx={{  maxHeight:'75vh',backgroundColor:'transparent',display:'flex',alignItems:'center'}}>
           <CardMedia
             component="img"
             image={foto2}
@@ -34,8 +34,8 @@ const ZaraLikeLayout = (props) => {
         </Typography>
 
         </Grid>
-        <Grid item xs={12} sm={4}>
-        <Card sx={{ backgroundColor:'transparent'}}>
+        <Grid item xs={6} sm={4}>
+        <Card sx={{maxHeight:'75vh',  backgroundColor:'transparent',display:'flex',alignItems:'center'}}>
           <CardMedia
             component="img"
             image={foto3}
@@ -47,13 +47,16 @@ const ZaraLikeLayout = (props) => {
                 {texto3}
         </Typography>
         </Grid>
-        <Grid item xs={12} >
-        <Card sx={{  backgroundColor:'transparent'}}>
+        <Grid item xs={6} sm={12}>
+        <Card sx={{ maxHeight:'75vh', backgroundColor:'transparent',display:'flex',alignItems:'center'}}>
           <CardMedia
             component="img"
             image={fotoGrande}
             alt="An image"
-            sx={{  }}
+            sx={{objectFit:'cover' ,
+            objectPosition: 'center',
+            height: '100%',
+            width: '100%', }}
           />
         </Card>
         </Grid>
