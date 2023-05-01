@@ -1,27 +1,32 @@
-import { Card, CardMedia, Grid, Typography } from '@mui/material'
+import { Card, CardMedia, Container, Grid, Typography } from '@mui/material'
 import React from 'react'
 
 const ZaraLikeLayout = (props) => {
     const {texto1,texto2,texto3,foto1,foto2,foto3,fotoGrande}=props;
 
   return (
-    <Grid container sx={{maxWidth:'100vw'}}>
-        <Grid item xs={6} sm={4}>
-        <Card sx={{ maxHeight:'75vh', backgroundColor:'transparent' ,display:'flex',alignItems:'center'}}>
+    <Container disableGutters>
+    <Grid container 
+    rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}
+    justifyContent="center"
+    spacing={2}
+    sx={{maxWidth:'100vw', display:'flex', padding:'2%',margin:'0'}}>
+        <Grid justifyContent="center"item xs={6} sm={4} sx={{ padding:'2%'}}>
+        <Card sx={{ maxHeight:'75vh', backgroundColor:'transparent' ,display:'flex',alignItems:'center',margin: 'auto'}}>
           <CardMedia
             component="img"
             image={foto1}
             alt="An image"
-            sx={{  }}
+            sx={{ }}
           />
         </Card >
-         <Typography sx={{backgroundColor:'transparent'}}>
+         <Typography sx={{backgroundColor:'transparent',display:'block'}}>
                 {texto1}
         </Typography>
             
         </Grid>
-        <Grid item xs={6} sm={4}>
-        <Card sx={{  maxHeight:'75vh',backgroundColor:'transparent',display:'flex',alignItems:'center'}}>
+        <Grid item xs={6} sm={4} sx={{ padding:'2%'}}>
+        <Card sx={{  maxHeight:'75vh',backgroundColor:'transparent',display:'flex',alignItems:'center',margin: 'auto'}}>
           <CardMedia
             component="img"
             image={foto2}
@@ -35,7 +40,7 @@ const ZaraLikeLayout = (props) => {
 
         </Grid>
         <Grid item xs={6} sm={4}>
-        <Card sx={{maxHeight:'75vh',  backgroundColor:'transparent',display:'flex',alignItems:'center'}}>
+        <Card sx={{maxHeight:'75vh',  backgroundColor:'transparent',display:'flex',alignItems:'center',margin: 'auto'}}>
           <CardMedia
             component="img"
             image={foto3}
@@ -61,6 +66,7 @@ const ZaraLikeLayout = (props) => {
         </Card>
         </Grid>
     </Grid>
+    </Container>
   )
 }
 

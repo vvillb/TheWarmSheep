@@ -9,7 +9,7 @@ const AppLayout = ({ children }) => {
 
         <Box
             component='main'
-            sx={{ flexGrow: 1 }}
+            sx={{ flexGrow: 1 , maxWidth:'100vw'}}
             
         >
           <Toolbar/>

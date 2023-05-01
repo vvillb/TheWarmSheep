@@ -4,7 +4,11 @@ import React from 'react'
 const ZaraLikeLayout2 = (props) => {
     const {texto1,texto2,texto3,texto4,foto1,foto2,foto3,foto4}=props;
   return (
-    <Grid container sx={{maxWidth:'100vw'}}>
+    <Grid container 
+    spacing={2}
+    justifyContent="space-around"
+    sx={{maxWidth:'100vw',
+    }}>
     <Grid item xs={6} sm={8}>
     <Card sx={{  backgroundColor:'transparent',display:'flex',alignItems:'center'}}>
       <CardMedia
