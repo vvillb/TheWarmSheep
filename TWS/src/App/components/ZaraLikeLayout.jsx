@@ -7,12 +7,12 @@ const ZaraLikeLayout = (props) => {
   return (
     <Container disableGutters>
     <Grid container 
-    rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}
+    rowSpacing={1} spacing={2}
     justifyContent="center"
-    spacing={2}
-    sx={{maxWidth:'100vw', display:'flex', padding:'2%',margin:'0'}}>
+    
+    sx={{maxWidth:'100vw', display:'flex', padding:'2%',marginLeft:0,marginRight:0}}>
         <Grid justifyContent="center"item xs={6} sm={4} sx={{ padding:'2%'}}>
-        <Card sx={{ maxHeight:'75vh', backgroundColor:'transparent' ,display:'flex',alignItems:'center',margin: 'auto'}}>
+        <Card sx={{ maxHeight:'75vh', backgroundColor:'transparent' ,display:'contents',alignItems:'center',margin: 'auto'}}>
           <CardMedia
             component="img"
             image={foto1}
@@ -26,7 +26,7 @@ const ZaraLikeLayout = (props) => {
             
         </Grid>
         <Grid item xs={6} sm={4} sx={{ padding:'2%'}}>
-        <Card sx={{  maxHeight:'75vh',backgroundColor:'transparent',display:'flex',alignItems:'center',margin: 'auto'}}>
+        <Card sx={{  maxHeight:'75vh',backgroundColor:'transparent',display:'contents',alignItems:'center',margin: 'auto'}}>
           <CardMedia
             component="img"
             image={foto2}
@@ -39,8 +39,8 @@ const ZaraLikeLayout = (props) => {
         </Typography>
 
         </Grid>
-        <Grid item xs={6} sm={4}>
-        <Card sx={{maxHeight:'75vh',  backgroundColor:'transparent',display:'flex',alignItems:'center',margin: 'auto'}}>
+        <Grid item xs={6} sm={4} sx={{ padding:'2%'}}>
+        <Card sx={{maxHeight:'75vh',  backgroundColor:'transparent',display:'contents',alignItems:'center',margin: 'auto'}}>
           <CardMedia
             component="img"
             image={foto3}
@@ -52,8 +52,8 @@ const ZaraLikeLayout = (props) => {
                 {texto3}
         </Typography>
         </Grid>
-        <Grid item xs={6} sm={12}>
-        <Card sx={{ maxHeight:'75vh', backgroundColor:'transparent',display:'flex',alignItems:'center'}}>
+        <Grid item xs={6} sm={12} sx={{ padding:'2%'}}>
+        <Card sx={{ maxHeight:'75vh', backgroundColor:'transparent',display:'contents',alignItems:'center'}}>
           <CardMedia
             component="img"
             image={fotoGrande}
