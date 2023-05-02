@@ -12,7 +12,7 @@ const ZaraLikeLayout = (props) => {
     
     sx={{maxWidth:'100vw', display:'flex', padding:'2%',marginLeft:0,marginRight:0}}>
         <Grid justifyContent="center"item xs={6} sm={4} sx={{ padding:'2%'}}>
-        <Card sx={{ maxHeight:'75vh', backgroundColor:'transparent' ,display:'contents',alignItems:'center',margin: 'auto'}}>
+        <Card sx={{ backgroundColor:'transparent',display:'contents',alignItems:'center', maxHeight:'100%',margin: 'auto',minHeight:'100%'}}>
           <CardMedia
             component="img"
             image={foto1}
@@ -26,7 +26,7 @@ const ZaraLikeLayout = (props) => {
             
         </Grid>
         <Grid item xs={6} sm={4} sx={{ padding:'2%'}}>
-        <Card sx={{  maxHeight:'75vh',backgroundColor:'transparent',display:'contents',alignItems:'center',margin: 'auto'}}>
+        <Card sx={{  backgroundColor:'transparent',display:'contents',alignItems:'center', maxHeight:'100%',margin: 'auto',minHeight:'100%'}}>
           <CardMedia
             component="img"
             image={foto2}
@@ -40,7 +40,7 @@ const ZaraLikeLayout = (props) => {
 
         </Grid>
         <Grid item xs={6} sm={4} sx={{ padding:'2%'}}>
-        <Card sx={{maxHeight:'75vh',  backgroundColor:'transparent',display:'contents',alignItems:'center',margin: 'auto'}}>
+        <Card sx={{ backgroundColor:'transparent',display:'contents',alignItems:'center', maxHeight:'100%',margin: 'auto',minHeight:'100%'}}>
           <CardMedia
             component="img"
             image={foto3}
@@ -53,7 +53,7 @@ const ZaraLikeLayout = (props) => {
         </Typography>
         </Grid>
         <Grid item xs={6} sm={12} sx={{ padding:'2%'}}>
-        <Card sx={{ maxHeight:'75vh', backgroundColor:'transparent',display:'contents',alignItems:'center'}}>
+        <Card sx={{ backgroundColor:'transparent',display:'contents',alignItems:'center', maxHeight:'100%',margin: 'auto',minHeight:'100%'}}>
           <CardMedia
             component="img"
             image={fotoGrande}

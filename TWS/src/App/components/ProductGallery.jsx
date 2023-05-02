@@ -38,6 +38,16 @@ import jerseyVerde1 from  '../../assets/images/products/jerseyVerde1.jpg'
 import jerseyVerde2 from  '../../assets/images/products/jerseyVerde2.jpg'
 import mittensVerdes1 from  '../../assets/images/products/mittensVerdes1.jpg'
 import mittensVerdes2 from  '../../assets/images/products/mittensVerdes2.jpg'
+import paisajeMontaña2 from  '../../assets/images/products/paisajeMontaña2.jpg'
+import paisajePlaya3 from  '../../assets/images/products/paisajePlaya3.jpg'
+import lanaMulticolor from  '../../assets/images/products/lanaMulticolor.jpg'
+import paisajeRisco from  '../../assets/images/products/paisajeRisco.jpg'
+import paisajePlaya5 from  '../../assets/images/products/paisajePlaya5.jpg'
+import paisajeRisco2 from  '../../assets/images/products/paisajeRisco2.jpg'
+import paisajeMontaña1 from  '../../assets/images/products/PaisajeMontaña1.jpg'
+
+import LauraNY from  '../../assets/images/products/product17.jpg'
+import paisajeCaballos from '../../assets/images/products/paisajeCaballos.jpg'
 import ZaraLikeLayout from './ZaraLikeLayout'
 import ZaraLikeLayout2 from './ZaraLikeLayout2'
 
@@ -49,25 +59,93 @@ const ProductGallery = () => {
   return (
     <>
     <ZaraLikeLayout
-    texto1="fjskfhd"
-    foto1={setNaranja1}
-    foto2={setNaranja1}
-    foto3={setNaranja1}
-    fotoGrande={setNaranja1}
+    texto1="bufanda multicolor"
+    foto1={LauraNY}
+    foto2={lanaMulticolor}
+    texto2='lana '
+    foto3={cuelloVErde}
+    texto3=''
+    fotoGrande={balaclavaAzul1}
+    tetxo4='balaclava azul'
     />
     <ZaraLikeLayout2
-    texto1="fjskfhd"
-    foto1={setNaranja1}
-    foto2={setNaranja1}
-    foto3={setNaranja1}
+    texto1="mittens verdes"
+    foto1={mittensVerdes2}
+    texto2='balaclava azul'
+    foto2={balaclavaAzul3}
+    texto4='balaclava azul'
+    foto4={balaclavaAzul2}
+    foto3={paisajeCaballos}
+    />
+    <ZaraLikeLayout
+    texto1="gorro azul"
+    texto2=''
+    texto3='jersey multicolor'
+    tetxo4='jersey multicolor'
+    foto1={beanieAzul}
+    foto2={paisajeMontaña2}
+    foto3={JerseyMangas5}
+    fotoGrande={JerseyMangas1}
+    />
+    <ZaraLikeLayout
+    texto1="jersey multicolor"
+    texto2='set de bolso y neceser'
+    texto3=''
+    tetxo4=''
+    foto1={JerseyMangas3}
+    foto2={BolsoVerde4}
+    foto3={JerseyMangas4}
+    fotoGrande={BolsoVerde3}
+    />
+    <ZaraLikeLayout2
+    texto1="jersey azul"
+    texto2=''
+    texto3='set de gorro y mitones'
+    tetxo4=''
+    foto1={jerseyAzul1}
+    foto2={jerseyAzul2}
+    foto3={setNaranja2}
     foto4={setNaranja1}
     />
     <ZaraLikeLayout
-    texto1="fjskfhd"
-    foto1={setNaranja1}
-    foto2={setNaranja1}
-    foto3={setNaranja1}
-    fotoGrande={setNaranja1}
+    texto1=""
+    texto2=''
+    texto3='balaclava rosa'
+    tetxo4=''
+    foto1={balaclavaRosa1}
+    foto2={BalaclavaRosa3}
+    foto3={balaclavaRosa2}
+    fotoGrande={paisajeRisco}
+    />
+    <ZaraLikeLayout2
+    texto1=""
+    texto2='set de jersey y gorro'
+    texto3='bufanda'
+    tetxo4=''
+    foto1={bufandaVerde2}
+    foto2={jerseyVerde2}
+    foto3={bufandaVerde1}
+    foto4={jerseyVerde1}
+    />
+    <ZaraLikeLayout
+    texto1=""
+    texto2=''
+    texto3='bufanda marrón'
+    tetxo4=''
+    foto1={bufandaMarron3}
+    foto2={paisajePlaya5}
+    foto3={bufandaMarron5}
+    fotoGrande={bufandaMarron6}
+    />
+    <ZaraLikeLayout2
+    texto1="jersey multicolor"
+    texto2=''
+    texto3=''
+    tetxo4=''
+    foto1={jerseyMulticolor1}
+    foto2={paisajeMontaña1}
+    foto3={paisajeRisco2}
+    foto4={jerseyMulticolor2}
     />
     </>
    )
