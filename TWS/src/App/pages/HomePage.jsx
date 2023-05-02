@@ -25,9 +25,10 @@ const HomePage = () => {
     <HeroSection/>
     
     <Grid container 
+    sx={{maxWidth:'100vw'}}
     >
           
-      <Grid item xs={12} sm={6}  sx={{  backgroundColor:'background.main', justifyContent:'center', alignContent:'center' ,display:'flex', padding:'5%'}}>
+      <Grid item xs={12} sm={6}  sx={{  backgroundColor:'background.main', justifyContent:'center', alignContent:'center' ,display:'flex', padding:'5%',maxWidth:'100vw'}}>
        
         <Card sx={{ maxWidth: 345 , backgroundColor:'transparent'}}>
           <CardMedia

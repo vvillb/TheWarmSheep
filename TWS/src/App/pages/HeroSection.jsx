@@ -17,7 +17,7 @@ const HeroSection = () => {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        width:'100vw',
+        maxWidth:'100vw',
         flexDirection:'column'
       }}
     >
