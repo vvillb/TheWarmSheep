@@ -58,8 +58,8 @@ import SlideIn from './functions/SlideIn'
 
 const ProductGallery = () => {
   return (
-    <Container sx={{maxWidth:'100vw'}}>
-      <SlideIn><Typography variant='h1' sx={{textShadow:'0px 0px 20px rgba(0,0,0,0.1)',}}>Algunas creaciones...</Typography></SlideIn>
+    <Container sx={{justifyContent:'center'}}>
+      <SlideIn><Typography variant='h3' sx={{textShadow:'0px 0px 20px rgba(0,0,0,0.1)',}}>Algunas creaciones...</Typography></SlideIn>
       
     <ZaraLikeLayout
     texto1="bufanda multicolor"

@@ -16,6 +16,8 @@ const Footer = () => {
     sx={{
         padding:'1%',
         backgroundColor: 'primary.main',
+        left: 0, 
+        right: 0
         
     }}
   >
