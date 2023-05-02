@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import AppLayout from '../layout/AppLayout'
 import Footer from '../components/Footer'
 import { Typography } from '@mui/material'
@@ -10,6 +10,10 @@ import ProductGallery from '../components/ProductGallery'
 
 
 const ProductPage = () => {
+  useEffect(()=>{
+    window.scrollTo(0,0);
+  
+  },[])
   return (
     <AppLayout>
         <ProductGallery/>

@@ -1,4 +1,4 @@
-import { Box, ImageList, ImageListItem } from '@mui/material'
+import { Box, Container, ImageList, ImageListItem, Typography } from '@mui/material'
 import React from 'react'
 import setNaranja1 from  '../../assets/images/products/setNaranja1.jpg'
 import setNaranja2 from  '../../assets/images/products/setNaranja2.jpg'
@@ -50,6 +50,7 @@ import LauraNY from  '../../assets/images/products/product17.jpg'
 import paisajeCaballos from '../../assets/images/products/paisajeCaballos.jpg'
 import ZaraLikeLayout from './ZaraLikeLayout'
 import ZaraLikeLayout2 from './ZaraLikeLayout2'
+import SlideIn from './functions/SlideIn'
 
 
 
@@ -57,7 +58,9 @@ import ZaraLikeLayout2 from './ZaraLikeLayout2'
 
 const ProductGallery = () => {
   return (
-    <>
+    <Container>
+      <SlideIn><Typography variant='h1' sx={{textShadow:'0px 0px 20px rgba(0,0,0,0.1)',}}>Algunas creaciones...</Typography></SlideIn>
+      
     <ZaraLikeLayout
     texto1="bufanda multicolor"
     foto1={LauraNY}
@@ -147,7 +150,7 @@ const ProductGallery = () => {
     foto3={paisajeRisco2}
     foto4={jerseyMulticolor2}
     />
-    </>
+    </Container>
    )
 }
 
