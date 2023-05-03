@@ -8,7 +8,7 @@ const ZaraLikeLayout2 = (props) => {
     <Grid container 
     rowSpacing={2} spacing={2}
     justifyContent="center"
-    sx={{maxWidth:'100vw', display:'flex', padding:'2%',marginLeft:0,marginRight:0
+    sx={{maxWidth:'100vw', display:'flex', padding:'2%',marginLeft:'-6.85',marginRight:0
     }}>
     <Grid item xs={6} sm={8} justifyContent="center" sx={{ padding:'2%'}}>
     <Card sx={{  backgroundColor:'transparent',display:'contents',alignItems:'center', maxHeight:'100%',margin: 'auto',minHeight:'100%',padding:'2%'}}>

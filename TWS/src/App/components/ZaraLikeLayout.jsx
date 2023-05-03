@@ -10,8 +10,8 @@ const ZaraLikeLayout = (props) => {
     rowSpacing={2} spacing={2}
     justifyContent="center"
     
-    sx={{maxWidth:'100vw', display:'flex', padding:'2%',marginLeft:0,marginRight:0}}>
-        <Grid justifyContent="center"item xs={6} sm={4} sx={{ padding:'2%'}}>
+    sx={{maxWidth:'100vw', display:'flex', padding:'2%',marginLeft:'-6.85',marginRight:0,justifyContent:'center'}}>
+        <Grid justifyContent="center" item xs={6} sm={4} sx={{ padding:'2%'}}>
         <Card sx={{ backgroundColor:'transparent',display:'contents',alignItems:'center', maxHeight:'100%',margin: 'auto',minHeight:'100%',padding:'2%'}}>
           <CardMedia
             component="img"
