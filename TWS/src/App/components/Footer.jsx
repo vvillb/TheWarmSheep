@@ -17,12 +17,14 @@ const Footer = () => {
         padding:'1%',
         backgroundColor: 'primary.main',
         left: 0, 
-        right: 0
+        right: 0,
+        minWidth:'100vw'
         
     }}
   >
         <Grid item xs={12} sm={6}
-        alignItems="center">
+        alignItems="center"
+        sx={{maxWidth:'100vw', left: 0, right: 0}}>
           
             <Link to='/' >
             <Button fullWidth color="secondary"  
