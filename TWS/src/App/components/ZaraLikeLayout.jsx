@@ -1,5 +1,5 @@
 import { Card, CardMedia, Container, Grid, Typography } from '@mui/material'
-import React from 'react'
+
 
 const ZaraLikeLayout = (props) => {
     const {texto1,texto2,texto3,foto1,foto2,foto3,fotoGrande}=props;
@@ -15,6 +15,7 @@ const ZaraLikeLayout = (props) => {
         <Card sx={{ backgroundColor:'transparent',display:'contents',alignItems:'center', maxHeight:'100%',margin: 'auto',minHeight:'100%',padding:'2%'}}>
           <CardMedia
             component="img"
+            loading="lazy" 
             image={foto1}
             alt="An image"
             sx={{ }}
@@ -29,6 +30,7 @@ const ZaraLikeLayout = (props) => {
         <Card sx={{  backgroundColor:'transparent',display:'contents',alignItems:'center', maxHeight:'100%',margin: 'auto',minHeight:'100%',padding:'2%'}}>
           <CardMedia
             component="img"
+            loading="lazy" 
             image={foto2}
             alt="An image"
             sx={{  }}
@@ -43,6 +45,7 @@ const ZaraLikeLayout = (props) => {
         <Card sx={{ backgroundColor:'transparent',display:'contents',alignItems:'center', maxHeight:'100%',margin: 'auto',minHeight:'100%',padding:'2%'}}>
           <CardMedia
             component="img"
+            loading="lazy" 
             image={foto3}
             alt="An image"
             sx={{  }}

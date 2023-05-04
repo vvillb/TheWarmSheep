@@ -14,6 +14,7 @@ const ZaraLikeLayout2 = (props) => {
     <Card sx={{  backgroundColor:'transparent',display:'contents',alignItems:'center', maxHeight:'100%',margin: 'auto',minHeight:'100%',padding:'2%'}}>
       <CardMedia
         component="img"
+        loading="lazy" 
         image={foto1}
         alt="An image"
         sx={{  objectFit:'cover' ,
@@ -31,6 +32,7 @@ const ZaraLikeLayout2 = (props) => {
     <Card sx={{  backgroundColor:'transparent',display:'contents',alignItems:'center', maxHeight:'100%',margin: 'auto',minHeight:'100%',padding:'2%'}}>
       <CardMedia
         component="img"
+        loading="lazy" 
         image={foto2}
         alt="An image"
         sx={{objectFit:'cover' ,
@@ -48,6 +50,7 @@ const ZaraLikeLayout2 = (props) => {
     <Card sx={{  backgroundColor:'transparent',display:'contents',alignItems:'center',maxHeight:'100%',margin: 'auto',minHeight:'100%',padding:'2%'}}>
       <CardMedia
         component="img"
+        loading="lazy" 
         image={foto3}
         alt="An image"
         sx={{objectFit:'cover' ,

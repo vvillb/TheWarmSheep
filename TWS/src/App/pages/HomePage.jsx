@@ -1,14 +1,9 @@
-import React, { useEffect } from 'react'
+import { useEffect } from 'react'
 import AppLayout from '../layout/AppLayout'
-import { Box, Grid, Typography ,Card,CardMedia,Container} from '@mui/material'
-import knits from '../../assets/images/img3.jpg'
-import beach from '../../assets/images/playaAsturias.jpg'
-import her from '../../assets/images/her.jpg'
+import { Grid, Typography ,Card,CardMedia} from '@mui/material'
 import videoSunset from '../../assets/videos/PaisajeSunset1.mp4'
-import { Image } from '@mui/icons-material'
 import HeroSection from './HeroSection'
 import Footer from '../components/Footer'
-import FadeIn from '../components/functions/FadeIn'
 import SlideIn from '../components/functions/SlideIn'
 import SlideInRight from '../components/functions/SlideInRight'
 import lanas from '../../assets/images/products/lanaBlanca2.jpg'
@@ -77,7 +72,7 @@ const HomePage = () => {
         Laura es una chica asturiana de corazón cálido, a la que siempre le ha gustado tejer con aguja y ganchillo. 
         Su pasión por las creaciones de lana y el cariño que pone en cada una de ellas se refleja en todas las prendas 
         que crea. Si quieres saber más sobre su trabajo y hablar directamente con ella para hacer un pedido personalizado,
-         no dudes en visitar la página de contacto. Laura estará encantada de compartir contigo su amor por la lana y 
+         no dudes en visitar la <Link to='/Contact'>página de contacto</Link> . Laura estará encantada de compartir contigo su amor por la lana y 
          ayudarte a crear la prenda de tus sueños.
         </Typography>
       </Grid>

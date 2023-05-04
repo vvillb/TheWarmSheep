@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import { useEffect } from 'react'
 import AppLayout from '../layout/AppLayout'
 import Footer from '../components/Footer'
 import knits from '../../assets/images/img3.jpg'

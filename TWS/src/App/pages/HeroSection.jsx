@@ -1,6 +1,6 @@
-import React from 'react'
+
 import { Button, Grid,  Typography } from '@mui/material'
-import playa from '../../assets/images/playa.jpg'
+import playa from '../../assets/images/products/paisajeRisco.jpg'
 import { Link } from 'react-router-dom'
 import '../../index.css'
 
