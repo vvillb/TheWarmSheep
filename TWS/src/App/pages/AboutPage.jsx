@@ -42,7 +42,7 @@ const AboutPage = () => {
       </Grid>
       
       <Grid item xs={12} sm={6}  sx={{  justifyContent:'center', alignContent:'center' ,display:'flex', padding:'5%', flexWrap:'wrap',}}>
-      <SlideIn>test</SlideIn>     
+      <SlideIn>Rincones</SlideIn>     
        <Typography paragraph >
         Magna aute labore ea veniam officia adipisicing esse. Officia eu adipisicing fugiat duis non aliquip dolore Lorem culpa laboris proident. Sunt reprehenderit enim dolore laboris proident id exercitation. Nostrud duis exercitation qui occaecat. Ad ea aliquip sint excepteur consequat laborum cillum ullamco sit laboris ad veniam ex quis. Labore exercitation anim id et ad deserunt non aliquip irure.
         </Typography>

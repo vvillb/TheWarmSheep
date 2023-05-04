@@ -13,6 +13,7 @@ import SlideIn from '../components/functions/SlideIn'
 import SlideInRight from '../components/functions/SlideInRight'
 import lanas from '../../assets/images/products/lanaBlanca2.jpg'
 import Lau from '../../assets/videos/paisajeChapona.mp4'
+import { Link } from 'react-router-dom'
 
 
 const HomePage = () => {
@@ -45,7 +46,10 @@ const HomePage = () => {
       <Grid item xs={12} sm={6}  sx={{  justifyContent:'center', alignContent:'center' ,display:'flex', padding:'5%', flexWrap:'wrap',}}>
       <SlideIn>La mejor calidad</SlideIn>     
        <Typography paragraph >
-          Primer texto. Eiusmod aute officia sit enim cupidatat proident nulla. Commodo esse amet labore Lorem voluptate et exercitation. Dolore eiusmod in cillum amet elit sit. Tempor sunt proident elit anim aliquip deserunt nulla nulla commodo id elit.
+       En The Warm Sheep queremos que tengas una experiencia única y personalizada, por eso todas nuestras creaciones están hechas a
+        mano con las mejores lanas de alta calidad. Y si quieres hacer un pedido, puedes escoger tú mismo el color y el tipo de lana 
+        que más te guste. Queremos que cada prenda sea única y especial para ti, porque sabemos que las cosas hechas con cariño son las
+         que más valor tienen. Así que anímate a navegar por nuestra página y descubre todo lo que podemos ofrecerte.
         </Typography>
       </Grid>
       
@@ -70,7 +74,11 @@ const HomePage = () => {
         <Grid item xs={12} sm={6}  sx={{ justifyContent:'center', alignContent:'center' ,display:'flex', padding:'5%',flexWrap:'wrap'}}>
         <SlideInRight>Las manos detrás de todo</SlideInRight>     
         <Typography paragraph>
-          Segundo texto. Quis ullamco fugiat non enim cupidatat cillum nisi Lorem. Nostrud consequat pariatur cillum veniam dolore non non cupidatat nisi minim sunt in aliqua amet. Magna ea cupidatat adipisicing consequat ipsum qui dolor. Consequat fugiat aliquip sint nulla irure est nisi.
+        Laura es una chica asturiana de corazón cálido, a la que siempre le ha gustado tejer con aguja y ganchillo. 
+        Su pasión por las creaciones de lana y el cariño que pone en cada una de ellas se refleja en todas las prendas 
+        que crea. Si quieres saber más sobre su trabajo y hablar directamente con ella para hacer un pedido personalizado,
+         no dudes en visitar la página de contacto. Laura estará encantada de compartir contigo su amor por la lana y 
+         ayudarte a crear la prenda de tus sueños.
         </Typography>
       </Grid>
       <Grid container>
@@ -93,7 +101,9 @@ const HomePage = () => {
         <Grid item xs={12} sm={6}  sx={{ justifyContent:'center', alignContent:'center' ,display:'flex', padding:'5%',flexWrap:'wrap'}}>
         <SlideIn>Lugares que inspiran</SlideIn> 
         <Typography paragraph>
-          Tercer texto Minim sint laboris Lorem Lorem amet voluptate ullamco aliqua occaecat. Et in sint laborum ea. Reprehenderit eu deserunt enim quis ex elit minim eiusmod amet eu cupidatat. Ex anim irure velit deserunt exercitation in officia aute minim. Adipisicing aliqua adipisicing enim dolor anim dolor Lorem ad qui. Exercitation do magna enim irure pariatur et incididunt aliqua. Consequat nostrud eiusmod minim tempor nisi excepteur ex.
+        En la sección <Link to='/About'>Rincones</Link> encontrarás algunos de los lugares favoritos de Laura, creadora de The Warm Sheep.
+         Si eres un amante de la naturaleza y te gusta explorar, esta sección es para ti. Laura te invita a descubrir algunos sitios
+          especiales y hermosos de Asturias que han sido una gran fuente de inspiración para ella. ¡No te lo pierdas!
         </Typography>
       </Grid>
       </Grid>
