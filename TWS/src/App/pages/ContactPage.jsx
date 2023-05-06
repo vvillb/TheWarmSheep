@@ -16,7 +16,7 @@ const ContactPage = () => {
   //limpiar la navegación si es una página de raíz:
   dispatch(clearBreadcrumbs());
   //introducir un elemento
-  const label='Contacto';
+  const label='/ Contacto';
   dispatch(addBreadcrumbs({label}))
 
 

@@ -80,3 +80,12 @@ button:focus-visible {
 .subtitle_dark{
   color:#c4d5c4;
 }
+
+
+.hyperlink{
+  color: #f5e7dd;
+}
+
+.hyperlink:hover{
+  color: #9bbabd;
+}

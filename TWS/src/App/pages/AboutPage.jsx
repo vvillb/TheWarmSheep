@@ -24,7 +24,7 @@ const AboutPage = () => {
   //limpiar la navegación si es una página de raíz:
   dispatch(clearBreadcrumbs());
   //introducir un elemento
-  const label='Rincones';
+  const label='/ Rincones';
   dispatch(addBreadcrumbs({label}))
 
 

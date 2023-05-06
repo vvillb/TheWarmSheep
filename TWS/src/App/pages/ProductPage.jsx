@@ -22,7 +22,7 @@ const ProductPage = () => {
   //limpiar la navegación si es una página de raíz:
   dispatch(clearBreadcrumbs());
   //introducir un elemento
-  const label='Nueva página';
+  const label='/ Productos';
   dispatch(addBreadcrumbs({label}))
 
   return (

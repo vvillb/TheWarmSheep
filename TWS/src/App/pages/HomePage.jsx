@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 import AppLayout from '../layout/AppLayout'
-import { Grid, Typography ,Card,CardMedia} from '@mui/material'
+import { Grid, Typography ,Card,CardMedia, Icon} from '@mui/material'
 import videoSunset from '../../assets/videos/PaisajeSunset1.mp4'
 import HeroSection from './HeroSection'
 import Footer from '../components/Footer'
@@ -35,7 +35,6 @@ const HomePage = () => {
     <Grid container 
     sx={{maxWidth:'100vw'}}
     >
-          
       <Grid item xs={12} sm={6}  sx={{  backgroundColor:'background.main', justifyContent:'center', alignContent:'center' ,display:'flex', padding:'5%',maxWidth:'100vw'}}>
        
         <Card sx={{ maxWidth: 345 , backgroundColor:'transparent'}}>

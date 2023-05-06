@@ -3,6 +3,8 @@ import { useDispatch, useSelector } from 'react-redux';
 import { clearBreadcrumbs } from '../../store/slices/breadcrumbSlice';
 import { Grid } from '@mui/material';
 import { Link } from 'react-router-dom';
+import HomeIcon from '@mui/icons-material/Home';
+
 
 export default function Breadcrumbs() {
     const dispatch = useDispatch();
@@ -36,12 +38,12 @@ export default function Breadcrumbs() {
         alignContent:'center'
         
     }}>
-         <Link to="/">Volver</Link>
+         <Link to="/" className='hyperlink'><HomeIcon/></Link>
          <nav className="w-full pl-32">
         <ol>
           {breadcrumbs.map((item, index) => (
             <span key={index}>
-              <Link to={item.path} >
+              <Link to={item.path} className='hyperlink'>
                 {item.label}
               </Link>
               {index < breadcrumbs.length - 1 && <span ></span>}
