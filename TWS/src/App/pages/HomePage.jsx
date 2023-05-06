@@ -9,6 +9,8 @@ import SlideInRight from '../components/functions/SlideInRight'
 import lanas from '../../assets/images/products/lanaBlanca2.jpg'
 import Lau from '../../assets/videos/paisajeChapona.mp4'
 import { Link } from 'react-router-dom'
+import { useDispatch } from 'react-redux'
+import { addBreadcrumbs, clearBreadcrumbs } from '../../store/slices/breadcrumbSlice'
 
 
 const HomePage = () => {
@@ -16,6 +18,16 @@ const HomePage = () => {
     window.scrollTo(0,0);
   
   },[])
+
+  const dispatch = useDispatch();
+
+  //limpiar la navegación si es una página de raíz:
+  dispatch(clearBreadcrumbs());
+  //introducir un elemento
+  const label='';
+  dispatch(addBreadcrumbs({label}))
+
+
   return (
     <AppLayout>
     <HeroSection/>

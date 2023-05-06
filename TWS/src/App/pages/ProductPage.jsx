@@ -7,6 +7,8 @@ import foto1 from '../../assets/images/products/product1.jpg'
 import foto2 from '../../assets/images/products/product2.jpg'
 import fondo from '../../assets/images/playa.jpg'
 import ProductGallery from '../components/ProductGallery'
+import { useDispatch } from 'react-redux'
+import { addBreadcrumbs, clearBreadcrumbs } from '../../store/slices/breadcrumbSlice'
 
 
 const ProductPage = () => {
@@ -14,6 +16,15 @@ const ProductPage = () => {
     window.scrollTo(0,0);
   
   },[])
+
+  const dispatch = useDispatch();
+
+  //limpiar la navegación si es una página de raíz:
+  dispatch(clearBreadcrumbs());
+  //introducir un elemento
+  const label='Nueva página';
+  dispatch(addBreadcrumbs({label}))
+
   return (
     <AppLayout>
         <ProductGallery/>

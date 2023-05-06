@@ -7,6 +7,8 @@ import PhotoRightTextLeft from '../components/PhotoRightTextLeft'
 import video1 from '../../assets/videos/paisajeChapona.mp4'
 import { Card, CardMedia, Grid, Typography } from '@mui/material'
 import SlideIn from '../components/functions/SlideIn'
+import { useDispatch } from 'react-redux'
+import { addBreadcrumbs, clearBreadcrumbs } from '../../store/slices/breadcrumbSlice'
 
 
 
@@ -15,6 +17,18 @@ const AboutPage = () => {
     window.scrollTo(0,0);
   
   },[])
+
+
+  const dispatch = useDispatch();
+
+  //limpiar la navegación si es una página de raíz:
+  dispatch(clearBreadcrumbs());
+  //introducir un elemento
+  const label='Rincones';
+  dispatch(addBreadcrumbs({label}))
+
+
+
   return (
     <AppLayout>
 
@@ -59,7 +73,7 @@ const AboutPage = () => {
       <PhotoRightTextLeft image={knits}  titulo="about" >
         Voluptate velit pariatur sint quis irure nulla officia elit ea dolore cupidatat labore. Irure labore eu id esse. Amet amet minim ut laboris.
       </PhotoRightTextLeft>
-      <Footer/>
+      npm install animate.css --save      <Footer/>
     </AppLayout>
   )
 }

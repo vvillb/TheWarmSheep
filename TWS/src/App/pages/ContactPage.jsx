@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react'
 import AppLayout from '../layout/AppLayout'
 import { Typography } from '@mui/material'
+import { useDispatch } from 'react-redux'
+import { addBreadcrumbs, clearBreadcrumbs } from '../../store/slices/breadcrumbSlice'
 
 
 const ContactPage = () => {
@@ -8,6 +10,16 @@ const ContactPage = () => {
     window.scrollTo(0,0);
   
   },[])
+
+  const dispatch = useDispatch();
+
+  //limpiar la navegación si es una página de raíz:
+  dispatch(clearBreadcrumbs());
+  //introducir un elemento
+  const label='Contacto';
+  dispatch(addBreadcrumbs({label}))
+
+
   return (
     <AppLayout>
         <Typography variant='h1'>
