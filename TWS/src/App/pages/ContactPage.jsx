@@ -1,8 +1,15 @@
-import React, { useEffect } from 'react'
+import { useEffect } from 'react'
 import AppLayout from '../layout/AppLayout'
-import { Typography } from '@mui/material'
+import { Card, CardMedia, Grid, Typography } from '@mui/material'
 import { useDispatch } from 'react-redux'
 import { addBreadcrumbs, clearBreadcrumbs } from '../../store/slices/breadcrumbSlice'
+import PhotoRightTextLeft from '../components/PhotoRightTextLeft'
+import LauNY from '../../assets/images/products/LauNY.png'
+import Footer from '../components/Footer'
+import PhotoLeftTextRight from '../components/PhotoLeftTextRight'
+import lana from '../../assets/images/products/lanaBlanca.jpg'
+import SlideIn from '../components/functions/SlideIn'
+
 
 
 const ContactPage = () => {
@@ -22,67 +29,34 @@ const ContactPage = () => {
 
   return (
     <AppLayout>
-        <Typography variant='h1'>
-            Contact Page
+      <Grid continer>
+      
 
+      
 
-        </Typography>
-        <Typography>
-          Minim sit ipsum est tempor esse magna velit amet. Aliqua pariatur cupidatat consequat commodo sit excepteur adipisicing consectetur nisi anim voluptate. Tempor laboris reprehenderit velit culpa. Enim aliqua nulla ad velit. Ex incididunt cillum est velit deserunt sint cillum aliqua nostrud qui velit.
-
-Minim ea ex mollit magna. Ut do nulla ad amet qui. Pariatur nisi sunt nisi sint consequat elit. Reprehenderit sit nulla aute quis do anim cillum duis cillum sit sit nulla pariatur culpa. Sunt id pariatur aute tempor id qui deserunt velit aute.
-
-Adipisicing elit officia aliquip labore fugiat voluptate amet minim commodo aliqua ipsum officia excepteur. Incididunt ipsum consectetur et quis nulla commodo aliquip minim ex tempor consequat culpa. Ipsum sint commodo dolor voluptate incididunt eiusmod exercitation exercitation do aliquip laboris deserunt. Incididunt consequat fugiat id velit ut amet Lorem. Dolore ullamco esse commodo deserunt dolor officia enim esse ea laborum cillum velit voluptate in. Minim nostrud voluptate qui amet qui anim deserunt culpa velit veniam nostrud incididunt.
-
-Ullamco officia dolore eu aliqua dolor duis labore dolor excepteur. Cillum incididunt sit sint aliqua consectetur aute. Ex eu id id officia eiusmod. Esse consectetur dolor velit ut.
-
-Fugiat velit aute reprehenderit excepteur reprehenderit et voluptate fugiat in Lorem enim Lorem velit. Est ullamco qui Lorem ad ut voluptate labore reprehenderit ea eiusmod anim sint aute. Est dolore nulla sit nostrud et laboris laboris labore occaecat ut incididunt nisi amet. Esse magna dolore anim veniam magna sit et cupidatat in tempor et.
-        </Typography>
-        <Typography>
-          Minim sit ipsum est tempor esse magna velit amet. Aliqua pariatur cupidatat consequat commodo sit excepteur adipisicing consectetur nisi anim voluptate. Tempor laboris reprehenderit velit culpa. Enim aliqua nulla ad velit. Ex incididunt cillum est velit deserunt sint cillum aliqua nostrud qui velit.
-
-Minim ea ex mollit magna. Ut do nulla ad amet qui. Pariatur nisi sunt nisi sint consequat elit. Reprehenderit sit nulla aute quis do anim cillum duis cillum sit sit nulla pariatur culpa. Sunt id pariatur aute tempor id qui deserunt velit aute.
-
-Adipisicing elit officia aliquip labore fugiat voluptate amet minim commodo aliqua ipsum officia excepteur. Incididunt ipsum consectetur et quis nulla commodo aliquip minim ex tempor consequat culpa. Ipsum sint commodo dolor voluptate incididunt eiusmod exercitation exercitation do aliquip laboris deserunt. Incididunt consequat fugiat id velit ut amet Lorem. Dolore ullamco esse commodo deserunt dolor officia enim esse ea laborum cillum velit voluptate in. Minim nostrud voluptate qui amet qui anim deserunt culpa velit veniam nostrud incididunt.
-
-Ullamco officia dolore eu aliqua dolor duis labore dolor excepteur. Cillum incididunt sit sint aliqua consectetur aute. Ex eu id id officia eiusmod. Esse consectetur dolor velit ut.
-
-Fugiat velit aute reprehenderit excepteur reprehenderit et voluptate fugiat in Lorem enim Lorem velit. Est ullamco qui Lorem ad ut voluptate labore reprehenderit ea eiusmod anim sint aute. Est dolore nulla sit nostrud et laboris laboris labore occaecat ut incididunt nisi amet. Esse magna dolore anim veniam magna sit et cupidatat in tempor et.
-        </Typography>
-        <Typography>
-          Minim sit ipsum est tempor esse magna velit amet. Aliqua pariatur cupidatat consequat commodo sit excepteur adipisicing consectetur nisi anim voluptate. Tempor laboris reprehenderit velit culpa. Enim aliqua nulla ad velit. Ex incididunt cillum est velit deserunt sint cillum aliqua nostrud qui velit.
-
-Minim ea ex mollit magna. Ut do nulla ad amet qui. Pariatur nisi sunt nisi sint consequat elit. Reprehenderit sit nulla aute quis do anim cillum duis cillum sit sit nulla pariatur culpa. Sunt id pariatur aute tempor id qui deserunt velit aute.
-
-Adipisicing elit officia aliquip labore fugiat voluptate amet minim commodo aliqua ipsum officia excepteur. Incididunt ipsum consectetur et quis nulla commodo aliquip minim ex tempor consequat culpa. Ipsum sint commodo dolor voluptate incididunt eiusmod exercitation exercitation do aliquip laboris deserunt. Incididunt consequat fugiat id velit ut amet Lorem. Dolore ullamco esse commodo deserunt dolor officia enim esse ea laborum cillum velit voluptate in. Minim nostrud voluptate qui amet qui anim deserunt culpa velit veniam nostrud incididunt.
-
-Ullamco officia dolore eu aliqua dolor duis labore dolor excepteur. Cillum incididunt sit sint aliqua consectetur aute. Ex eu id id officia eiusmod. Esse consectetur dolor velit ut.
-
-Fugiat velit aute reprehenderit excepteur reprehenderit et voluptate fugiat in Lorem enim Lorem velit. Est ullamco qui Lorem ad ut voluptate labore reprehenderit ea eiusmod anim sint aute. Est dolore nulla sit nostrud et laboris laboris labore occaecat ut incididunt nisi amet. Esse magna dolore anim veniam magna sit et cupidatat in tempor et.
-        </Typography>
-        <Typography>
-          Minim sit ipsum est tempor esse magna velit amet. Aliqua pariatur cupidatat consequat commodo sit excepteur adipisicing consectetur nisi anim voluptate. Tempor laboris reprehenderit velit culpa. Enim aliqua nulla ad velit. Ex incididunt cillum est velit deserunt sint cillum aliqua nostrud qui velit.
-
-Minim ea ex mollit magna. Ut do nulla ad amet qui. Pariatur nisi sunt nisi sint consequat elit. Reprehenderit sit nulla aute quis do anim cillum duis cillum sit sit nulla pariatur culpa. Sunt id pariatur aute tempor id qui deserunt velit aute.
-
-Adipisicing elit officia aliquip labore fugiat voluptate amet minim commodo aliqua ipsum officia excepteur. Incididunt ipsum consectetur et quis nulla commodo aliquip minim ex tempor consequat culpa. Ipsum sint commodo dolor voluptate incididunt eiusmod exercitation exercitation do aliquip laboris deserunt. Incididunt consequat fugiat id velit ut amet Lorem. Dolore ullamco esse commodo deserunt dolor officia enim esse ea laborum cillum velit voluptate in. Minim nostrud voluptate qui amet qui anim deserunt culpa velit veniam nostrud incididunt.
-
-Ullamco officia dolore eu aliqua dolor duis labore dolor excepteur. Cillum incididunt sit sint aliqua consectetur aute. Ex eu id id officia eiusmod. Esse consectetur dolor velit ut.
-
-Fugiat velit aute reprehenderit excepteur reprehenderit et voluptate fugiat in Lorem enim Lorem velit. Est ullamco qui Lorem ad ut voluptate labore reprehenderit ea eiusmod anim sint aute. Est dolore nulla sit nostrud et laboris laboris labore occaecat ut incididunt nisi amet. Esse magna dolore anim veniam magna sit et cupidatat in tempor et.
-        </Typography>
-        <Typography>
-          Minim sit ipsum est tempor esse magna velit amet. Aliqua pariatur cupidatat consequat commodo sit excepteur adipisicing consectetur nisi anim voluptate. Tempor laboris reprehenderit velit culpa. Enim aliqua nulla ad velit. Ex incididunt cillum est velit deserunt sint cillum aliqua nostrud qui velit.
-
-Minim ea ex mollit magna. Ut do nulla ad amet qui. Pariatur nisi sunt nisi sint consequat elit. Reprehenderit sit nulla aute quis do anim cillum duis cillum sit sit nulla pariatur culpa. Sunt id pariatur aute tempor id qui deserunt velit aute.
-
-Adipisicing elit officia aliquip labore fugiat voluptate amet minim commodo aliqua ipsum officia excepteur. Incididunt ipsum consectetur et quis nulla commodo aliquip minim ex tempor consequat culpa. Ipsum sint commodo dolor voluptate incididunt eiusmod exercitation exercitation do aliquip laboris deserunt. Incididunt consequat fugiat id velit ut amet Lorem. Dolore ullamco esse commodo deserunt dolor officia enim esse ea laborum cillum velit voluptate in. Minim nostrud voluptate qui amet qui anim deserunt culpa velit veniam nostrud incididunt.
-
-Ullamco officia dolore eu aliqua dolor duis labore dolor excepteur. Cillum incididunt sit sint aliqua consectetur aute. Ex eu id id officia eiusmod. Esse consectetur dolor velit ut.
-
-Fugiat velit aute reprehenderit excepteur reprehenderit et voluptate fugiat in Lorem enim Lorem velit. Est ullamco qui Lorem ad ut voluptate labore reprehenderit ea eiusmod anim sint aute. Est dolore nulla sit nostrud et laboris laboris labore occaecat ut incididunt nisi amet. Esse magna dolore anim veniam magna sit et cupidatat in tempor et.
-        </Typography>
+        <Grid item>
+        <PhotoRightTextLeft image={LauNY}  titulo="Contacto" >
+        Sigue a The Warm Sheep en instagram para ver más creaciones, paisajes e inspiración.
+      </PhotoRightTextLeft>
+      <PhotoLeftTextRight image={lana} titulo='¿Tienes algo en mente?'>
+        Habla con Laura para hacerlo realidad! No dudes en enviar un mensaje directo para empezar.
+      </PhotoLeftTextRight>
+        </Grid>
+        <Grid item xs={12} sm={6}  sx={{  justifyContent:'center', alignContent:'center' ,display:'flex', padding:'5%'}}>
+       
+       <Card sx={{  backgroundColor:'transparent'}}>
+         <CardMedia
+           component="iframe"
+           title='instagram'           
+           src='https://instagram.com/thewarmsheep_'
+           sx={{ height: '65vh', width: '80vw' }}
+         />
         
+       </Card>
+      
+     </Grid>
+       </Grid>
+       <Footer/>
     </AppLayout>
   )
 }
