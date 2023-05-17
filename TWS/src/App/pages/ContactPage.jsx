@@ -9,6 +9,7 @@ import Footer from '../components/Footer'
 import PhotoLeftTextRight from '../components/PhotoLeftTextRight'
 import lana from '../../assets/images/products/lanaBlanca.jpg'
 import SlideIn from '../components/functions/SlideIn'
+import { Link } from 'react-router-dom'
 
 
 
@@ -36,7 +37,11 @@ const ContactPage = () => {
 
         <Grid item>
         <PhotoRightTextLeft image={LauNY}  titulo="Contacto" >
-        Sigue a The Warm Sheep en instagram para ver más creaciones, paisajes e inspiración.
+        Sigue a 
+        &nbsp;<Link to='https://www.instagram.com/thewarmsheep_/' >
+        The Warm Sheep en instagram
+          </Link>  &nbsp;
+           para ver más creaciones, paisajes e inspiración.
       </PhotoRightTextLeft>
       <PhotoLeftTextRight image={lana} titulo='¿Tienes algo en mente?'>
         Habla con Laura para hacerlo realidad! No dudes en enviar un mensaje directo para empezar.
